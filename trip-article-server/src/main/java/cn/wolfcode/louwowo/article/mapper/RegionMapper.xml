@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.louwowo.article.mapper.RegionMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.luowowo.article.domain.Region" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="sn" property="sn" jdbcType="VARCHAR" />
+    <result column="ref" property="ref" jdbcType="VARCHAR" />
+    <result column="ishot" property="ishot" jdbcType="TINYINT" />
+    <result column="sequence" property="sequence" jdbcType="INTEGER" />
+    <result column="info" property="info" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from destination_region
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.luowowo.article.domain.Region" useGeneratedKeys="true" keyProperty="id" >
+    insert into destination_region (name, sn, ref, 
+      ishot, sequence, info
+      )
+    values (#{name,jdbcType=VARCHAR}, #{sn,jdbcType=VARCHAR}, #{ref,jdbcType=VARCHAR}, 
+      #{ishot,jdbcType=TINYINT}, #{sequence,jdbcType=INTEGER}, #{info,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.luowowo.article.domain.Region" >
+    update destination_region
+    set name = #{name,jdbcType=VARCHAR},
+      sn = #{sn,jdbcType=VARCHAR},
+      ref = #{ref,jdbcType=VARCHAR},
+      ishot = #{ishot,jdbcType=TINYINT},
+      sequence = #{sequence,jdbcType=INTEGER},
+      info = #{info,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, name, sn, ref, ishot, sequence, info
+    from destination_region
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, name, sn, ref, ishot, sequence, info
+    from destination_region
+  </select>
+
+  <select id="selectForList" resultMap="BaseResultMap" >
+    select id, name, sn, ref, ishot, sequence, info
+    from destination_region
+  </select>
+
+
+  <update id="updateHotValue">
+    update destination_region  set ishot = #{hot} where id = #{id}
+  </update>
+
+  <select id="selectHotRegion" resultMap="BaseResultMap">
+    select id, name, sn, ref, ishot, sequence, info
+    from destination_region where ishot = 1 order by sequence
+  </select>
+
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="trip-article-server" />
+        <module name="trip-cache-api" />
+        <module name="trip-article-api" />
+        <module name="trip-website" />
+        <module name="trip-member-api" />
+        <module name="trip-common" />
+        <module name="trip-member-server" />
+        <module name="trip-mgrsite" />
+        <module name="trip-cache-server" />
+        <module name="trip-search-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="luowowo" options="-parameters" />
+      <module name="trip-article-api" options="-parameters" />
+      <module name="trip-article-server" options="-parameters" />
+      <module name="trip-cache-api" options="-parameters" />
+      <module name="trip-cache-server" options="-parameters" />
+      <module name="trip-common" options="-parameters" />
+      <module name="trip-member-api" options="-parameters" />
+      <module name="trip-member-server" options="-parameters" />
+      <module name="trip-mgrsite" options="-parameters" />
+      <module name="trip-search-api" options="-parameters" />
+      <module name="trip-website" options="-parameters" />
+    </option>
+  </component>
+</project>

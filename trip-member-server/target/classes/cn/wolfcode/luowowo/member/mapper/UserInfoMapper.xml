@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.luowowo.member.mapper.UserInfoMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.luowowo.member.domain.UserInfo" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="level" property="level" jdbcType="INTEGER" />
+    <result column="gender" property="gender" jdbcType="INTEGER" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="birthday" property="birthday" jdbcType="DATE" />
+    <result column="headImgUrl" property="headImgUrl" jdbcType="VARCHAR" />
+    <result column="info" property="info" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from userinfo
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.luowowo.member.domain.UserInfo" useGeneratedKeys="true" keyProperty="id" >
+    insert into userinfo (nickname, phone, email, 
+      password, level, gender, 
+      city, birthday, headImgUrl, 
+      info, state)
+    values (#{nickname,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{level,jdbcType=INTEGER}, #{gender,jdbcType=INTEGER}, 
+      #{city,jdbcType=VARCHAR}, #{birthday,jdbcType=DATE}, #{headImgUrl,jdbcType=VARCHAR}, 
+      #{info,jdbcType=VARCHAR}, #{state,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.luowowo.member.domain.UserInfo" >
+    update userinfo
+    set nickname = #{nickname,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      level = #{level,jdbcType=INTEGER},
+      gender = #{gender,jdbcType=INTEGER},
+      city = #{city,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=DATE},
+      headImgUrl = #{headImgUrl,jdbcType=VARCHAR},
+      info = #{info,jdbcType=VARCHAR},
+      state = #{state,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, nickname, phone, email, password, level, gender, city, birthday, headImgUrl, 
+    info, state
+    from userinfo
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, nickname, phone, email, password, level, gender, city, birthday, headImgUrl, 
+    info, state
+    from userinfo
+  </select>
+    <select id="IsExistByPhone" resultType="java.lang.Boolean">
+      <![CDATA[ SELECT COUNT(id) FROM userinfo WHERE phone = #{phone}]]>
+    </select>
+    <select id="selectUserInfo" resultType="cn.wolfcode.luowowo.member.domain.UserInfo">
+      select id, nickname, phone, email, password, level, gender, city, birthday, headImgUrl,
+             info, state
+      from userinfo
+      where phone = #{username} and password = #{password}
+    </select>
+</mapper>
