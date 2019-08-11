@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Getter
 public class QueryObject  implements Serializable{
     private int currentPage=1; //当前页
-    private int pageSize=10;   //每页显示记录数
+    private int pageSize=5;   //每页显示记录数
 
 
     private String keyword;

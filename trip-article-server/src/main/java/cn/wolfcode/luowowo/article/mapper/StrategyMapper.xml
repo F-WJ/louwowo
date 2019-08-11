@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.luowowo.article.mapper.StrategyMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.luowowo.article.domain.Strategy" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="subTitle" property="subTitle" jdbcType="VARCHAR" />
+    <result column="coverUrl" property="coverUrl" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="sequence" property="sequence" jdbcType="INTEGER" />
+    
+    <association property="dest" javaType="cn.wolfcode.luowowo.article.domain.Destination" columnPrefix="d_">
+      <id column="id" property="id" jdbcType="BIGINT" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+    </association>
+    
+    
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from strategy
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.luowowo.article.domain.Strategy" useGeneratedKeys="true" keyProperty="id" >
+    insert into strategy (dest_id, title, subTitle, 
+      coverUrl, state, sequence
+      )
+    values (#{dest.id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{subTitle,jdbcType=VARCHAR}, 
+      #{coverUrl,jdbcType=VARCHAR}, #{state,jdbcType=INTEGER}, #{sequence,jdbcType=INTEGER}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.luowowo.article.domain.Strategy" >
+    update strategy
+    set dest_id = #{dest.id,jdbcType=BIGINT},
+      title = #{title,jdbcType=VARCHAR},
+      subTitle = #{subTitle,jdbcType=VARCHAR},
+      coverUrl = #{coverUrl,jdbcType=VARCHAR},
+      state = #{state,jdbcType=INTEGER},
+      sequence = #{sequence,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select s.id, s.dest_id, s.title, s.subTitle, s.coverUrl, s.state, s.sequence,
+      d.id d_id, d.name d_name
+    from strategy s LEFT  JOIN  destination d on s.dest_id = d.id
+    where s.id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+       select s.id, s.dest_id, s.title, s.subTitle, s.coverUrl, s.state, s.sequence,
+      d.id d_id, d.name d_name
+    from strategy s LEFT  JOIN  destination d on s.dest_id = d.id
+  </select>
+  <select id="selectForList" resultMap="BaseResultMap" >
+       select s.id, s.dest_id, s.title, s.subTitle, s.coverUrl, s.state, s.sequence,
+      d.id d_id, d.name d_name
+    from strategy s LEFT  JOIN  destination d on s.dest_id = d.id
+  </select>
+</mapper>

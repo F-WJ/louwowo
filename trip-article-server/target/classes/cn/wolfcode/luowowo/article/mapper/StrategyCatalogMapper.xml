@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.luowowo.article.mapper.StrategyCatalogMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.luowowo.article.domain.StrategyCatalog" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="sequence" property="sequence" jdbcType="INTEGER" />
+    <result column="dest_id" property="destId" jdbcType="BIGINT" />
+    
+    
+    <association property="strategy" javaType="cn.wolfcode.luowowo.article.domain.Strategy" columnPrefix="s_">
+      <id column="id" property="id" jdbcType="BIGINT" />
+      <result column="title" property="title" jdbcType="VARCHAR" />
+      <result column="subTitle" property="subTitle" jdbcType="VARCHAR" />
+    </association>
+
+    <!--攻略明细集合-->
+    <collection property="details" column="id" select="cn.wolfcode.luowowo.article.mapper.StrategyDetailMapper.selectDetailByCatalogId"></collection>
+    
+    
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from strategy_catalog
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.luowowo.article.domain.StrategyCatalog" useGeneratedKeys="true" keyProperty="id" >
+    insert into strategy_catalog (name, dest_id, strategy_id, 
+      state, sequence)
+    values (#{name,jdbcType=VARCHAR}, #{destId,jdbcType=BIGINT}, #{strategy.id,jdbcType=BIGINT}, 
+      #{state,jdbcType=INTEGER}, #{sequence,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.luowowo.article.domain.StrategyCatalog" >
+    update strategy_catalog
+    set name = #{name,jdbcType=VARCHAR},
+      dest_id = #{destId,jdbcType=BIGINT},
+      strategy_id = #{strategy.id,jdbcType=BIGINT},
+      state = #{state,jdbcType=INTEGER},
+      sequence = #{sequence,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select sc.id, sc.name, sc.dest_id, sc.strategy_id, sc.state, sc.sequence,
+      s.id s_id, s.title s_title, s.subTitle s_subTitle
+    from strategy_catalog sc LEFT  join  strategy s on sc.strategy_id = s.id
+    where sc.id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select sc.id, sc.name, sc.dest_id, sc.strategy_id, sc.state, sc.sequence,
+      s.id s_id, s.title s_title, s.subTitle s_subTitle
+    from strategy_catalog sc LEFT  join  strategy s on sc.strategy_id = s.id
+  </select>
+
+  <select id="selectForList" resultMap="BaseResultMap" >
+    select sc.id, sc.name, sc.dest_id, sc.strategy_id, sc.state, sc.sequence,
+    s.id s_id, s.title s_title, s.subTitle s_subTitle
+    from strategy_catalog sc LEFT  join  strategy s on sc.strategy_id = s.id
+  </select>
+
+  <select id="selectCatalogByStrategyId" resultType="cn.wolfcode.luowowo.article.domain.StrategyCatalog">
+    select id, name from strategy_catalog where  strategy_id = #{strategyId}
+  </select>
+
+  <select id="selectCatalogByDestId" resultMap="BaseResultMap">
+    select id, name from strategy_catalog where  dest_id = #{id}
+  </select>
+
+
+</mapper>

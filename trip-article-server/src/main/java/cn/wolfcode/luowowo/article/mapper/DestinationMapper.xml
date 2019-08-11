@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.luowowo.article.mapper.DestinationMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.luowowo.article.domain.Destination" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="english" property="english" jdbcType="VARCHAR" />
+    <result column="pinyin" property="pinyin" jdbcType="VARCHAR" />
+    <result column="ishot" property="ishot" jdbcType="BIT" />
+
+    <result column="info" property="info" jdbcType="VARCHAR" />
+    <result column="deep" property="deep" jdbcType="INTEGER" />
+
+    <result column="coverUrl" property="coverUrl" jdbcType="VARCHAR" />
+
+    <association property="parent" javaType="cn.wolfcode.luowowo.article.domain.Destination" columnPrefix="p_">
+      <id column="id" property="id" jdbcType="BIGINT" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+    </association>
+
+    <association property="region" javaType="cn.wolfcode.luowowo.article.domain.Region" columnPrefix="r_">
+      <id column="id" property="id" jdbcType="BIGINT" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+    </association>
+
+
+    <!--子地区-->
+    <collection property="children" column="id" select="selectSubDestByParentId"></collection>
+
+
+
+
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from destination
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.luowowo.article.domain.Destination" useGeneratedKeys="true" keyProperty="id" >
+    insert into destination (parent_id, region_id, name, 
+      english, pinyin, ishot, 
+      coverUrl, info, deep
+      )
+    values (#{parent.id,jdbcType=BIGINT}, #{region.id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
+      #{english,jdbcType=VARCHAR}, #{pinyin,jdbcType=VARCHAR}, #{ishot,jdbcType=BIT}, 
+      #{coverUrl,jdbcType=VARCHAR}, #{info,jdbcType=VARCHAR}, #{deep,jdbcType=INTEGER}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.luowowo.article.domain.Destination" >
+    update destination
+    set parent_id = #{parent.id,jdbcType=BIGINT},
+      region_id = #{region.id,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      english = #{english,jdbcType=VARCHAR},
+      pinyin = #{pinyin,jdbcType=VARCHAR},
+      ishot = #{ishot,jdbcType=BIT},
+      coverUrl = #{coverUrl,jdbcType=VARCHAR},
+      info = #{info,jdbcType=VARCHAR},
+      deep = #{deep,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select d.id, d.parent_id, d.region_id, d.name, d.english, d.pinyin, d.ishot, d.coverUrl, d.info, d.deep,
+      p.id p_id, p.name p_name, r.id r_id, r.name r_name
+    from destination d LEFT JOIN  destination p on d.parent_id = p.id  LEFT  JOIN  destination_region r on d.region_id = r.id
+    where d.id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select d.id, d.parent_id, d.region_id, d.name, d.english, d.pinyin, d.ishot, d.coverUrl, d.info, d.deep,
+      p.id p_id, p.name p_name, r.id r_id, r.name r_name
+    from destination d LEFT JOIN  destination p on d.parent_id = p.id  LEFT  JOIN  destination_region r on d.region_id = r.id
+
+
+  </select>
+
+  <select id="selectForList" resultMap="BaseResultMap" >
+    select d.id, d.parent_id, d.region_id, d.name, d.english, d.pinyin, d.ishot, d.coverUrl, d.info, d.deep,
+    p.id p_id, p.name p_name, r.id r_id, r.name r_name
+    from destination d LEFT JOIN  destination p on d.parent_id = p.id  LEFT  JOIN  destination_region r on d.region_id = r.id
+    <where>
+      <if test="keyword != null">
+        and d.name like concat('%',#{keyword} ,'%')
+      </if>
+      <if test="ishot != -1">
+        and d.ishot = #{ishot}
+      </if>
+      <if test="parentId == -1">
+        and d.parent_id is null
+      </if>
+      <if test="parentId != -1">
+        and d.parent_id = #{parentId}
+      </if>
+    </where>
+  </select>
+  <select id="selectDestByDeep" resultMap="BaseResultMap">
+    select d.id,  d.name from destination d where d.deep &lt;= #{deep}
+  </select>
+
+  <select id="selectDestByIds" resultMap="BaseResultMap">
+    select d.id,  d.name from destination d where d.id IN
+    <foreach collection="array" item="el" open="(" separator="," close=")">
+      #{el}
+    </foreach>
+  </select>
+  <update id="updateHotValue">
+    update destination set ishot = #{hot} where id = #{id}
+  </update>
+  <update id="updateInfo">
+    update destination set info= #{info} where id = #{id}
+  </update>
+
+
+  <select id="selectSubDestByParentId" resultMap="BaseResultMap">
+    select d.id,  d.name from destination d where d.parent_id = #{id} limit 0, 10
+  </select>
+
+  <select id="selectDestsByParendId" resultMap="BaseResultMap">
+     select d.id,  d.name from destination d where d.parent_id = #{parendId}
+  </select>
+</mapper>

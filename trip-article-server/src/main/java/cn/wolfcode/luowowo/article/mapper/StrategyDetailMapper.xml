@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.luowowo.article.mapper.StrategyDetailMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.luowowo.article.domain.StrategyDetail" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="subTitle" property="subTitle" jdbcType="VARCHAR" />
+    <result column="summary" property="summary" jdbcType="VARCHAR" />
+    <result column="coverUrl" property="coverUrl" jdbcType="VARCHAR" />
+    <result column="createTime" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="isabroad" property="isabroad" jdbcType="BIT" />
+    <result column="viewnum" property="viewnum" jdbcType="INTEGER" />
+    <result column="replynum" property="replynum" jdbcType="INTEGER" />
+    <result column="favornum" property="favornum" jdbcType="INTEGER" />
+    <result column="sharenum" property="sharenum" jdbcType="INTEGER" />
+    <result column="thumbsupnum" property="thumbsupnum" jdbcType="INTEGER" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+
+
+
+    <association property="strategy" javaType="cn.wolfcode.luowowo.article.domain.Strategy" columnPrefix="s_">
+      <id column="id" property="id" jdbcType="BIGINT" />
+      <result column="title" property="title" jdbcType="VARCHAR" />
+      <result column="subTitle" property="subTitle" jdbcType="VARCHAR" />
+    </association>
+
+    <association property="dest" javaType="cn.wolfcode.luowowo.article.domain.Destination" columnPrefix="d_">
+      <id column="id" property="id" jdbcType="BIGINT" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+    </association>
+
+    <association property="theme" javaType="cn.wolfcode.luowowo.article.domain.StrategyTheme" columnPrefix="st_">
+      <id column="id" property="id" jdbcType="BIGINT" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+    </association>
+
+    <association property="catalog" javaType="cn.wolfcode.luowowo.article.domain.StrategyCatalog" columnPrefix="sc_">
+      <id column="id" property="id" jdbcType="BIGINT" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+    </association>
+
+
+
+
+
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from strategy_detail
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.luowowo.article.domain.StrategyDetail" useGeneratedKeys="true" keyProperty="id" >
+    insert into strategy_detail (strategy_id, dest_id, theme_id, 
+      catalog_id, author_id, title, 
+      subTitle, summary, coverUrl, 
+      createTime, isabroad, viewnum, 
+      replynum, favornum, sharenum, 
+      thumbsupnum, state)
+    values (#{strategy.id,jdbcType=BIGINT}, #{dest.id,jdbcType=BIGINT}, #{theme.id,jdbcType=BIGINT}, 
+      #{catalog.id,jdbcType=BIGINT}, #{author.id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, 
+      #{subTitle,jdbcType=VARCHAR}, #{summary,jdbcType=VARCHAR}, #{coverUrl,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{isabroad,jdbcType=BIT}, #{viewnum,jdbcType=INTEGER}, 
+      #{replynum,jdbcType=INTEGER}, #{favornum,jdbcType=INTEGER}, #{sharenum,jdbcType=INTEGER}, 
+      #{thumbsupnum,jdbcType=INTEGER}, #{state,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.luowowo.article.domain.StrategyDetail" >
+    update strategy_detail
+    set strategy_id = #{strategy.id,jdbcType=BIGINT},
+      dest_id = #{dest.id,jdbcType=BIGINT},
+      theme_id = #{theme.id,jdbcType=BIGINT},
+      catalog_id = #{catalog.id,jdbcType=BIGINT},
+      author_id = #{author.id,jdbcType=BIGINT},
+      title = #{title,jdbcType=VARCHAR},
+      subTitle = #{subTitle,jdbcType=VARCHAR},
+      summary = #{summary,jdbcType=VARCHAR},
+      coverUrl = #{coverUrl,jdbcType=VARCHAR},
+      createTime = #{createTime,jdbcType=TIMESTAMP},
+      isabroad = #{isabroad,jdbcType=BIT},
+      viewnum = #{viewnum,jdbcType=INTEGER},
+      replynum = #{replynum,jdbcType=INTEGER},
+      favornum = #{favornum,jdbcType=INTEGER},
+      sharenum = #{sharenum,jdbcType=INTEGER},
+      thumbsupnum = #{thumbsupnum,jdbcType=INTEGER},
+      state = #{state,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select sd.id, sd.strategy_id, sd.dest_id, sd.theme_id, sd.catalog_id, sd.author_id, sd.title, sd.subTitle,
+    sd.summary, sd.coverUrl, sd.createTime, sd.isabroad, sd.viewnum, sd.replynum, sd.favornum, sd.sharenum, sd.thumbsupnum,
+    sd.state,
+    s.id s_id, s.title s_title, s.subTitle s_subTitle,
+    d.id d_id, d.name d_name,
+    st.id st_id, st.name st_name,
+    sc.id sc_id, sc.name sc_name
+
+    from strategy_detail  sd
+    LEFT JOIN   strategy s on sd.strategy_id = s.id
+    LEFT JOIN   destination d on sd.dest_id = d.id
+    LEFT JOIN   strategy_theme st on sd.theme_id = st.id
+    LEFT JOIN   strategy_catalog sc on sd.catalog_id = sc.id
+
+
+
+
+    where sd.id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select sd.id, sd.strategy_id, sd.dest_id, sd.theme_id, sd.catalog_id, sd.author_id, sd.title, sd.subTitle,
+    sd.summary, sd.coverUrl, sd.createTime, sd.isabroad, sd.viewnum, sd.replynum, sd.favornum, sd.sharenum, sd.thumbsupnum,
+    sd.state,
+    s.id s_id, s.title s_title, s.subTitle s_subTitle,
+    d.id d_id, d.name d_name,
+    st.id st_id, st.name st_name,
+    sc.id sc_id, sc.name sc_name
+
+    from strategy_detail  sd
+    LEFT JOIN   strategy s on sd.strategy_id = s.id
+    LEFT JOIN   destination d on sd.dest_id = d.id
+    LEFT JOIN   strategy_theme st on sd.theme_id = st.id
+    LEFT JOIN   strategy_catalog sc on sd.catalog_id = sc.id
+  </select>
+
+  <select id="selectForList" resultMap="BaseResultMap" >
+    select sd.id, sd.strategy_id, sd.dest_id, sd.theme_id, sd.catalog_id, sd.author_id, sd.title, sd.subTitle,
+    sd.summary, sd.coverUrl, sd.createTime, sd.isabroad, sd.viewnum, sd.replynum, sd.favornum, sd.sharenum, sd.thumbsupnum,
+    sd.state,
+    s.id s_id, s.title s_title, s.subTitle s_subTitle,
+    d.id d_id, d.name d_name,
+    st.id st_id, st.name st_name,
+    sc.id sc_id, sc.name sc_name
+
+    from strategy_detail  sd
+    LEFT JOIN   strategy s on sd.strategy_id = s.id
+    LEFT JOIN   destination d on sd.dest_id = d.id
+    LEFT JOIN   strategy_theme st on sd.theme_id = st.id
+    LEFT JOIN   strategy_catalog sc on sd.catalog_id = sc.id
+    LEFT JOIN   strategy_tag_relation str on str.detail_id = sd.id
+
+    <where>
+
+      <if test="destId != -1">
+        and sd.dest_id = #{destId}
+      </if>
+
+      <if test="tagId != -1">
+        and str.tag_id = #{tagId}
+      </if>
+    </where>
+
+
+  </select>
+  <update id="updateState">
+    update strategy_detail  set state = #{state} where id = #{id}
+  </update>
+
+  <insert id="insertRelation" >
+    insert into strategy_tag_relation(tag_id, detail_id) values(#{tagId}, #{detailId})
+  </insert>
+
+  <delete id="deleteRelation">
+    DELETE  from strategy_tag_relation where detail_id = #{id}
+  </delete>
+
+
+  <select id="selectDetailByCatalogId" resultType="cn.wolfcode.luowowo.article.domain.StrategyDetail">
+    select id, title, subTitle from strategy_detail where catalog_id = #{id}
+  </select>
+
+  <select id="selectDetailTop3" resultType="cn.wolfcode.luowowo.article.domain.StrategyDetail">
+     select id, title, subTitle, coverUrl, summary from strategy_detail where  dest_id = #{id} order by viewnum DESC limit 0, 3
+  </select>
+
+  <update id="updateStatisData">
+    update strategy_detail set   viewnum = #{viewnum},
+      replynum = #{replynum},
+      favornum = #{favornum},
+      sharenum = #{sharenum},
+      thumbsupnum = #{thumbsupnum}   where id = #{strategyId}
+  </update>
+</mapper>
