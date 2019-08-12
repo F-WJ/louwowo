@@ -1,65 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71558685-f450-42b6-8f28-d8201bdb5f25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Travel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/TravelContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/TravelCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/TravelQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/ITravelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelContentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelContentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/query/travelDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/query/travelPreExpend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/query/travelTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/TravelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/travelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/util/JsonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/travel/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/StrategyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/util/UMEditorUploader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/util/UploadUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/commentTpl.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/input.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/DestinationQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/DestinationQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/query/StrategyQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/query/StrategyQuery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/service/IStrategyDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/service/IStrategyDetailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/META-INF/trip-article-server.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-cache-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-cache-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AjaxResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AjaxResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-common/target/classes/cn/wolfcode/luowowo/common/util/AjaxResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-common/target/classes/cn/wolfcode/luowowo/common/util/AjaxResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-member-server/src/main/java/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-member-server/src/main/java/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-member-server/target/classes/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-member-server/target/classes/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-mgrsite/target/classes/cn/wolfcode/luowowo/MgrSite.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-mgrsite/target/classes/cn/wolfcode/luowowo/MgrSite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/controller/DestinationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/controller/DestinationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/target/classes/templates/strategy/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/target/classes/templates/strategy/list.ftl" afterDir="false" />
-    </list>
+    <list default="true" id="71558685-f450-42b6-8f28-d8201bdb5f25" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../trip-common/target/" />
@@ -240,8 +182,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+            <state relative-caret-position="468">
+              <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -445,8 +387,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="100" />
-    <option name="y" value="68" />
+    <option name="x" value="156" />
+    <option name="y" value="29" />
     <option name="width" value="1527" />
     <option name="height" value="1100" />
   </component>
@@ -786,15 +728,15 @@
       <workItem from="1565398316275" duration="27680000" />
       <workItem from="1565484488974" duration="26394000" />
       <workItem from="1565538071393" duration="27359000" />
-      <workItem from="1565574363674" duration="26061000" />
+      <workItem from="1565574363674" duration="26501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167493000" />
+    <option name="totallyTimeSpent" value="167933000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="68" width="1527" height="1100" extended-state="0" />
+    <frame x="156" y="29" width="1527" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4970874" visible="true" weight="0.29175186" />
@@ -1234,8 +1176,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        <state relative-caret-position="468">
+          <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

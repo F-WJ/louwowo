@@ -46,7 +46,6 @@ public class TravelController {
         PageInfo<Travel> pageInfo = travelService.selectTravelByState(qo, Travel.STATE_RELEASE);
         model.addAttribute("pageInfo", pageInfo);
         model.addAttribute("userInfo", userInfo);
-        ''
         return "travel/list";
     }
 
