@@ -2,7 +2,11 @@
 <head>
     <title>游记管理</title>
     <#include "../common/header.ftl">
+
+
+
     <script type="text/javascript">
+
         $(function () {
 
             //查看文章按钮

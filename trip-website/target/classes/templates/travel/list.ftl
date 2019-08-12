@@ -9,11 +9,43 @@
     <script type="text/javascript" src="/js/jquery/jquery.js"></script>
     <script type="text/javascript" src="/js/system/travelnotes.js"></script>
     <link href="/js/plugins/jqPaginator/jqPagination.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/js/plugins/zebrazooltips/public/css/zebra_tooltips.css" type="text/css">
     <script type="text/javascript" src="/js/plugins/jqPaginator/jq-paginator.min.js"></script>
+
+    <script type="text/javascript" src="/js/plugins/zebrazooltips/public/javascript/zebra_tooltips.js"></script>
+
+
 </head>
 
 <script>
     $(function () {
+
+        //编写游记检测是否登录
+        $(".input-login").click(function () {
+            //获取当前用户
+            var user = $(this).data("user");
+            console.log(user);
+            if(user != ""){
+                window.location.href = "/travel/input";
+            }else {
+                new $.Zebra_Tooltips($('.zebra_tips1'),{
+                    'background_color': 'rgba(83,149,196,0.13)',
+                    'color':            '#ffac52',
+                    'position':     'right',
+                });
+            }
+
+
+
+        })
+
+        //没有登录弹出显示信息
+        $(document).ready(function() {
+            new $.Zebra_Tooltips($('.zebra_tips1'));
+        });
+
+
         //游记分页
         $(".com-opt").change(function () {
             $("#currentPage").val(1);
@@ -26,10 +58,19 @@
             $("#orderType").val($(this).data("sort"))
             $("#searchForm").submit();
         })
+
+
+
+
+
+
     })
 </script>
 
+
 <body>
+
+
     <#assign currentNav="travel">
     <#include "../common/navbar.ftl">
     <div class="wrapper" style="padding-top: 10px">
@@ -72,9 +113,20 @@
                         <option value="4">15天以上</option>
                     </select>
 
-                    <#if userInfo??>
-                    <div class="tn-write"><a class="btn-add" target="_blank" href="/travel/input"><i></i>写游记</a></div>
-                    </#if>
+                        <#if userInfo?? >
+                            <div class="tn-write"><a class="btn-add input-login" target="_blank" data-user = ${(userInfo)!}><i></i>写游记</a></div>
+                        <#else>
+
+
+                            <div class="tn-write">
+                                <a class="btn-add input-login zebra_tips1" title="亲，请登录账户，或者点击写游记按钮进入登录页面" target="_blank" href="/login.html" data-user = ${(userInfo)!}><i></i>写游记
+                                </a>
+                            </div>
+                        </#if>
+
+
+
+
                     <script>
                         $("#travelTimeType").val(${qo.travelTimeType!});
                         $("#dayType").val(${qo.dayType!});

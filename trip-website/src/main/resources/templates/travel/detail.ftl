@@ -124,9 +124,16 @@
                                 <a title="分享到微信" rel="nofollow" role="button" class="weixin"></a>
                             </div>
                         </div>
+<#--                        判断游记作者是否是当前用户-->
+                        <#if userInfo??>
                         <div class="bs_collect ">
                             <a href="/travel/input?id=${detail.id!}"  class="bs_btn _j_goto_comment" ><i></i><strong>编辑</strong></a>
                         </div>
+                        <#elseif (userInfo.phone)! == detail.author.phone>
+                            <div class="bs_collect ">
+                                <a href="/travel/input?id=${detail.id!}"  class="bs_btn _j_goto_comment" ><i></i><strong>编辑</strong></a>
+                            </div>
+                        </#if>
                     </div>
 
                 </div>
@@ -293,6 +300,7 @@
                                     <ul class="gs_content" style="left: 0px;">
                                         <#list sds as s>
                                             <li>
+
                                                 <a href="/strategy/detail?id=${s.id!}" target="_blank" class="_j_mddrel_gl_item"
                                                      title="${s.title!}"><img src="${s.coverUrl!}">
                                                     <div class="bg"></div><span><i></i>${s.viewnum!}</span>

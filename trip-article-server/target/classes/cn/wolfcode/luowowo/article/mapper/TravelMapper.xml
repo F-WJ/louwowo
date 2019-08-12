@@ -32,6 +32,7 @@
       <id column="id" property="id"  />
       <result column="nickname" property="nickname"  />
       <result column="headImgUrl" property="headImgUrl"  />
+      <result column="phone" property="phone"  />
 
     </association>
 
@@ -85,6 +86,7 @@
            t.favornum, t.sharenum, t.thumbsupnum, t.state,
 
            u.nickname author_nickname,
+           u.phone author_phone,
            u.headImgUrl author_headImgUrl,
            d.name dest_name,
            d.coverUrl dest_coverUrl

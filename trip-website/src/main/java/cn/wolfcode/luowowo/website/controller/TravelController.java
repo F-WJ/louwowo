@@ -45,7 +45,7 @@ public class TravelController {
         //展示已发布的游记
         PageInfo<Travel> pageInfo = travelService.selectTravelByState(qo, Travel.STATE_RELEASE);
         model.addAttribute("pageInfo", pageInfo);
-        model.addAttribute("userInfo", userInfo);
+
         return "travel/list";
     }
 
@@ -70,7 +70,7 @@ public class TravelController {
 
 
     @RequestMapping("detail")
-    public String detail(Model model, Long id){
+    public String detail(Model model, Long id, @UserParam UserInfo userInfo){
         //回显文章内容detail
         Travel detail = travelService.get(id);
         TravelContent content = travelService.getContent(id);
@@ -89,6 +89,10 @@ public class TravelController {
         //前三关于此景点游记
         List<Travel> ts = travelService.getDetailTop3(detail.getDest().getId());
         model.addAttribute("ts", ts);
+
+        //回显当前用户
+        model.addAttribute("userInfo", userInfo);
+
         return "/travel/detail";
 
 
