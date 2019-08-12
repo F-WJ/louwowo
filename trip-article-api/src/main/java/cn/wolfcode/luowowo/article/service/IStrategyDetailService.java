@@ -7,6 +7,7 @@ package cn.wolfcode.luowowo.article.service;
 import cn.wolfcode.luowowo.article.domain.StrategyContent;
 import cn.wolfcode.luowowo.article.domain.StrategyDetail;
 import cn.wolfcode.luowowo.article.query.StrategyDetailQuery;
+import cn.wolfcode.luowowo.article.query.StrategyQuery;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
@@ -64,5 +65,10 @@ public interface IStrategyDetailService {
      * @param id
      */
     List<StrategyDetail> getDetailTop3(Long id);
+
+
+    PageInfo<StrategyDetail> getDetailByTag(StrategyQuery qo);
+
+    StrategyDetail getByCatalogId(Long catalogId);
 
 }

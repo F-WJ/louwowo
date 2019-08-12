@@ -31,7 +31,7 @@
             <div class="filter">
                 <div class="filter-wrapper clearfix">
                     <ul class="filter-tag">
-                        <li class="on _j_tag" data-id="-1"><a href="/strategy/list?destId=${dest.id!}" >全部</a></li>
+                        <li class="on _j_tag" data-id="-1"><a href="/strategy/list?tagId=-1&destId=${dest.id!}" >全部</a></li>
                             <#list tags as t>
                                 <li class="_j_tag" data-id="${t.id}"><a href="/strategy/list?tagId=${t.id}&destId=${dest.id!}">${t.name}</a></li>
                             </#list>

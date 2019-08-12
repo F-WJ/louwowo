@@ -46,4 +46,6 @@ public interface IStrategyCatalogService {
      * @return
      */
     StrategyCatalog get(Long id);
+
+
 }

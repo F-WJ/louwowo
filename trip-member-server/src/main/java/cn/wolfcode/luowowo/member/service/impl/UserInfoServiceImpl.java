@@ -8,10 +8,7 @@ import cn.wolfcode.luowowo.member.mapper.UserInfoMapper;
 import cn.wolfcode.luowowo.member.service.IUserInfoService;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
-import com.sun.javafx.tk.TKClipboard;
-import org.apache.zookeeper.Login;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.DigestUtils;
 
 import java.util.UUID;
 

@@ -6,6 +6,7 @@ import cn.wolfcode.luowowo.article.mapper.StrategyDetailMapper;
 import cn.wolfcode.luowowo.article.mapper.StrategyMapper;
 import cn.wolfcode.luowowo.article.mapper.StrategyTagMapper;
 import cn.wolfcode.luowowo.article.query.StrategyDetailQuery;
+import cn.wolfcode.luowowo.article.query.StrategyQuery;
 import cn.wolfcode.luowowo.article.service.IDestinationService;
 import cn.wolfcode.luowowo.article.service.IStrategyDetailService;
 import com.alibaba.dubbo.config.annotation.Service;
@@ -128,6 +129,18 @@ public class StrategyDetailServiceImpl implements IStrategyDetailService {
     public List<StrategyDetail> getDetailTop3(Long id) {
         return strategyDetailMapper.selectDetailTop3(id);
     }
+
+    @Override
+    public PageInfo<StrategyDetail> getDetailByTag(StrategyQuery qo) {
+        PageHelper.startPage(qo.getCurrentPage(),qo.getPageSize());
+        return new PageInfo<StrategyDetail>(strategyDetailMapper.getDetailByTag(qo));
+    }
+
+    @Override
+    public StrategyDetail getByCatalogId(Long catalogId) {
+        return strategyDetailMapper.getByCatalogId(catalogId);
+    }
+
 
 //    @Override
 //    public void updateStatisData(StrategyPersistenceStatisVO vo) {

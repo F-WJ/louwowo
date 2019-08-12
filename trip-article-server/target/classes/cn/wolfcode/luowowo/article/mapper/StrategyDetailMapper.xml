@@ -169,6 +169,54 @@
   <select id="selectDetailTop3" resultType="cn.wolfcode.luowowo.article.domain.StrategyDetail">
      select id, title, subTitle, coverUrl, summary from strategy_detail where  dest_id = #{id} order by viewnum DESC limit 0, 3
   </select>
+    <select id="getDetailByTag" resultMap="BaseResultMap">
+      select DISTINCT sd.id, sd.strategy_id, sd.dest_id, sd.theme_id, sd.catalog_id, sd.author_id, sd.title, sd.subTitle,
+             sd.summary, sd.coverUrl, sd.createTime, sd.isabroad, sd.viewnum, sd.replynum, sd.favornum, sd.sharenum, sd.thumbsupnum,
+             sd.state,
+             s.id s_id, s.title s_title, s.subTitle s_subTitle,
+             d.id d_id, d.name d_name,
+             st.id st_id, st.name st_name,
+             sc.id sc_id, sc.name sc_name
+
+      from strategy_detail  sd
+             LEFT JOIN   strategy s on sd.strategy_id = s.id
+             LEFT JOIN   destination d on sd.dest_id = d.id
+             LEFT JOIN   strategy_theme st on sd.theme_id = st.id
+             LEFT JOIN   strategy_catalog sc on sd.catalog_id = sc.id
+             LEFT JOIN   strategy_tag_relation str on str.detail_id = sd.id
+
+
+      <where>
+        <if test="tagId != -1">
+          and str.detail_id = #{tagId}
+        </if>
+      </where>
+
+
+
+    </select>
+  <select id="getByCatalogId" resultMap="BaseResultMap">
+    select sd.id, sd.strategy_id, sd.dest_id, sd.theme_id, sd.catalog_id, sd.author_id, sd.title, sd.subTitle,
+           sd.summary, sd.coverUrl, sd.createTime, sd.isabroad, sd.viewnum, sd.replynum, sd.favornum, sd.sharenum, sd.thumbsupnum,
+           sd.state,
+           s.id s_id, s.title s_title, s.subTitle s_subTitle,
+           d.id d_id, d.name d_name,
+           st.id st_id, st.name st_name,
+           sc.id sc_id, sc.name sc_name
+
+    from strategy_detail  sd
+           LEFT JOIN   strategy s on sd.strategy_id = s.id
+           LEFT JOIN   destination d on sd.dest_id = d.id
+           LEFT JOIN   strategy_theme st on sd.theme_id = st.id
+           LEFT JOIN   strategy_catalog sc on sd.catalog_id = sc.id
+           LEFT JOIN   strategy_tag_relation str on str.detail_id = sd.id
+
+    where sd.strategy_id = #{catalogId}
+    order by viewnum DESC
+    limit 1
+
+
+  </select>
 
   <update id="updateStatisData">
     update strategy_detail set   viewnum = #{viewnum},

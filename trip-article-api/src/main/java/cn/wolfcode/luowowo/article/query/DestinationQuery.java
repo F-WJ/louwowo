@@ -13,5 +13,8 @@ public class DestinationQuery extends QueryObject {
 
     private int ishot = -1;
 
+    private Long destId;
+    private Long catalogId;
+
 
 }

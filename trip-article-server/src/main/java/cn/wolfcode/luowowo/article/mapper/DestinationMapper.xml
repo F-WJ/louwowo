@@ -25,6 +25,7 @@
     </association>
 
 
+
     <!--子地区-->
     <collection property="children" column="id" select="selectSubDestByParentId"></collection>
 

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.luowowo.article.mapper.TravelMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.luowowo.article.domain.Travel" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="summary" property="summary" jdbcType="VARCHAR" />
+    <result column="coverUrl" property="coverUrl" jdbcType="VARCHAR" />
+    <result column="travelTime" property="travelTime" jdbcType="TIMESTAMP" />
+    <result column="perExpends" property="perExpends" jdbcType="INTEGER" />
+    <result column="days" property="days" jdbcType="INTEGER" />
+    <result column="person" property="person" jdbcType="INTEGER" />
+    <result column="createTime" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="releaseTime" property="releaseTime" jdbcType="TIMESTAMP" />
+    <result column="lastUpdateTime" property="lastUpdateTime" jdbcType="TIMESTAMP" />
+    <result column="isPublic" property="isPublic" jdbcType="BIT" />
+    <result column="viewnum" property="viewnum" jdbcType="INTEGER" />
+    <result column="replynum" property="replynum" jdbcType="INTEGER" />
+    <result column="favornum" property="favornum" jdbcType="INTEGER" />
+    <result column="sharenum" property="sharenum" jdbcType="INTEGER" />
+    <result column="thumbsupnum" property="thumbsupnum" jdbcType="INTEGER" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+
+
+    <association property="dest"  javaType="cn.wolfcode.luowowo.article.domain.Destination"  columnPrefix="dest_">
+      <id column="id" property="id"  />
+      <result column="name" property="name"  />
+      <result column="coverUrl" property="coverUrl"  />
+    </association>
+
+    <association property="author"  javaType="cn.wolfcode.luowowo.member.domain.UserInfo" columnPrefix="author_" >
+      <id column="id" property="id"  />
+      <result column="nickname" property="nickname"  />
+      <result column="headImgUrl" property="headImgUrl"  />
+
+    </association>
+
+
+
+  </resultMap>
+
+
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from travel
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.luowowo.article.domain.Travel" useGeneratedKeys="true" keyProperty="id" >
+    insert into travel (dest_id, author_id, title, 
+      summary, coverUrl, travelTime, 
+      perExpends, days, person, 
+      createTime,lastUpdateTime,
+      isPublic,
+      state)
+    values (#{dest.id,jdbcType=BIGINT}, #{author.id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR},
+      #{summary,jdbcType=VARCHAR}, #{coverUrl,jdbcType=VARCHAR}, #{travelTime,jdbcType=TIMESTAMP}, 
+      #{perExpends,jdbcType=INTEGER}, #{days,jdbcType=INTEGER}, #{person,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP},  #{lastUpdateTime,jdbcType=TIMESTAMP},
+      #{isPublic,jdbcType=BIT},
+      #{state,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.luowowo.article.domain.Travel" >
+    update travel
+    set dest_id = #{dest.id,jdbcType=BIGINT},
+      author_id = #{author.id,jdbcType=BIGINT},
+      title = #{title,jdbcType=VARCHAR},
+      summary = #{summary,jdbcType=VARCHAR},
+      coverUrl = #{coverUrl,jdbcType=VARCHAR},
+      travelTime = #{travelTime,jdbcType=TIMESTAMP},
+      perExpends = #{perExpends,jdbcType=INTEGER},
+      days = #{days,jdbcType=INTEGER},
+      person = #{person,jdbcType=INTEGER},
+      lastUpdateTime = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      state = #{state,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="changeState">
+    update travel set state = #{state} where id = #{id}
+
+
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select t.id, dest_id, t.author_id, t.title, t.summary, t.coverUrl, t.travelTime, t.perExpends,
+           t.days, t.person, t.createTime, t.releaseTime, t.lastUpdateTime, t.isPublic, t.viewnum, t.replynum,
+           t.favornum, t.sharenum, t.thumbsupnum, t.state,
+
+           u.nickname author_nickname,
+           u.headImgUrl author_headImgUrl,
+           d.name dest_name,
+           d.coverUrl dest_coverUrl
+
+    from travel t
+           left join destination d on d.id = t.dest_id
+           left join userinfo u on u.id = t.author_id
+
+
+    where t.id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, dest_id, author_id, title, summary, coverUrl, travelTime, perExpends, 
+    days, person, createTime, releaseTime, lastUpdateTime, isPublic, viewnum, replynum, 
+    favornum, sharenum, thumbsupnum, state
+    from travel
+  </select>
+  <select id="selectForList" resultMap="BaseResultMap">
+    select t.id, dest_id, t.author_id, t.title, t.summary, t.coverUrl, t.travelTime, t.perExpends,
+           t.days, t.person, t.createTime, t.releaseTime, t.lastUpdateTime, t.isPublic, t.viewnum, t.replynum,
+           t.favornum, t.sharenum, t.thumbsupnum, t.state,
+
+           u.nickname author_nickname,
+           u.headImgUrl author_headImgUrl,
+           d.name dest_name,
+           d.coverUrl dest_coverUrl
+
+    from travel t
+           left join destination d on d.id = t.dest_id
+           left join userinfo u on u.id = t.author_id
+  </select>
+  <select id="selectTravelByState" resultMap="BaseResultMap">
+    select t.id, t.dest_id, t.author_id, t.title, t.summary, t.coverUrl, t.travelTime, t.perExpends,
+           t.days, t.person, t.createTime, t.releaseTime, t.lastUpdateTime, t.isPublic, t.viewnum, t.replynum,
+           t.favornum, t.sharenum, t.thumbsupnum, t.state,
+
+           u.nickname author_nickname,
+           u.headImgUrl author_headImgUrl,
+           d.name dest_name
+
+    from travel t
+    left join destination d on d.id = t.dest_id
+    left join userinfo u on u.id = t.author_id
+    where t.state = #{state}
+    and (month(t.travelTime) >= #{travelTime.min} and month(t.travelTime) &lt;= #{travelTime.max})
+    and (t.Days >= #{travelDay.min} and t.Days &lt;= #{travelDay.max})
+    and (t.perExpends >= #{travelPreExpend.min} and t.perExpends &lt;= #{travelPreExpend.max})
+    <if test="qo.destId != -1">
+      and t.dest_id = #{qo.destId}
+    </if>
+
+
+  </select>
+  <select id="getContent" resultType="cn.wolfcode.luowowo.article.domain.TravelContent">
+    select id , content
+    from travel_content
+    where id = #{id}
+
+  </select>
+  <select id="getDetailTop3" resultType="cn.wolfcode.luowowo.article.domain.Travel">
+    select id, title, summary, coverUrl from travel where  dest_id = #{id} order by viewnum DESC limit 0, 3
+  </select>
+
+
+</mapper>

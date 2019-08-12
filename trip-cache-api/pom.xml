@@ -18,6 +18,11 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+
+
+
+
+
         <!--依赖api-->
         <dependency>
             <groupId>cn.wolfcode.luowowo</groupId>

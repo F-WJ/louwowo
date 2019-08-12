@@ -1,5 +1,6 @@
 package cn.wolfcode.luowowo.common.util;
 
+import jdk.nashorn.internal.ir.annotations.Reference;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,9 +9,13 @@ import lombok.Setter;
 @Getter
 public class AjaxResult {
 
+
+
     private String msg;
 
     private boolean success = true;
+
+    private Long data;
 
 
     public AjaxResult(){

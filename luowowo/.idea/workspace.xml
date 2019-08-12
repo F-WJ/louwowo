@@ -2,100 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71558685-f450-42b6-8f28-d8201bdb5f25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Destination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Strategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyCatalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyCommend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyTheme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/DestinationQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyCatalogQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyCommendQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyDetailQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyTagQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyThemeQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IDestinationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCommendService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyTagService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyThemeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/DestinationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyCatalogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyCatalogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyCommendMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyCommendMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyContentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyContentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyTagMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyTagMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyThemeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyThemeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/DestinationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyCatalogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyCommendServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyTagServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyThemeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/DestionationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyCatalogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyCommendController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyTagController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyThemeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/destination/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategy/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategyCatalog/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategyCommend/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategyDetail/input.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategyDetail/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategyTag/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategyTheme/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/guide.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/hotdestTpl.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/index.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/survey.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/surveyTpl.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/travelTpl.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/commentTpl.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/detail.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/index.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/searchPageTpl.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Travel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/TravelContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/TravelCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/TravelQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/ITravelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelContentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelContentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/query/travelDay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/query/travelPreExpend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/query/travelTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/TravelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/travelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/util/JsonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/travel/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/StrategyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/util/UMEditorUploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/util/UploadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/commentTpl.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/input.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/list.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/vo/StrategyPersistenceStatisVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/vo/StrategyPersistenceStatisVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/ActicleServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/ActicleServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/mapper/RegionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/RegionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/mapper/RegionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/RegionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/service/impl/RegionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/RegionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/DestinationQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/DestinationQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/query/StrategyQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/query/StrategyQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/service/IStrategyDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/service/IStrategyDetailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/META-INF/trip-article-server.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/louwowo/article/ActicleServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/louwowo/article/mapper/RegionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/louwowo/article/mapper/RegionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/louwowo/article/service/impl/RegionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/query/QueryObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/query/QueryObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-common/target/classes/cn/wolfcode/luowowo/common/query/QueryObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-common/target/classes/cn/wolfcode/luowowo/common/query/QueryObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/RegionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/RegionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-mgrsite/target/classes/cn/wolfcode/luowowo/mgrsite/controller/RegionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-mgrsite/target/classes/cn/wolfcode/luowowo/mgrsite/controller/RegionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/param/UserInfoArgumentResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/param/UserInfoArgumentResolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-cache-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-cache-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AjaxResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AjaxResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-common/target/classes/cn/wolfcode/luowowo/common/util/AjaxResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-common/target/classes/cn/wolfcode/luowowo/common/util/AjaxResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-member-server/src/main/java/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-member-server/src/main/java/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-member-server/target/classes/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-member-server/target/classes/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-mgrsite/target/classes/cn/wolfcode/luowowo/MgrSite.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-mgrsite/target/classes/cn/wolfcode/luowowo/MgrSite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/controller/DestinationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/controller/DestinationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-website/target/classes/templates/strategy/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/target/classes/templates/strategy/list.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -118,26 +81,90 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/travel/list.ftl">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="330">
+                    <caret line="15" column="32" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="32" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/survey.ftl">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="873">
+                    <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/surveyTpl.ftl">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="484">
+                    <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+                    <folding>
+                      <element signature="e#1045#1051#0#HTML" expanded="true" />
+                      <element signature="e#1051#1057#0#HTML" expanded="true" />
+                      <element signature="e#1064#1070#0#HTML" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/list.ftl">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="449">
+                    <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="3">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Travel.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="22">
+                    <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Destination.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="171">
+                    <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/RegionController.java">
+        <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/TravelQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-              <folding>
-                <element signature="e#1409#1410#0" expanded="true" />
-                <element signature="e#1459#1460#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IRegionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="145">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,10 +173,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IDestinationService.java">
+        <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="125">
+              <caret line="132" column="59" lean-forward="true" selection-start-line="132" selection-start-column="59" selection-end-line="132" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,35 +185,63 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/RegionServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/ITravelService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="131">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1153#1154#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1364#1365#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/TravelServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="104" column="60" lean-forward="true" selection-start-line="104" selection-start-column="60" selection-end-line="104" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4035#4036#0" expanded="true" />
+                <element signature="e#4086#4087#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/list.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-946">
+              <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/DestinationServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="556">
+              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,39 +250,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/RegionQuery.java">
+        <entry file="file://$PROJECT_DIR$/../trip-website/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-220" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyCatalogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyCatalogServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <caret line="152" column="36" selection-start-line="152" selection-start-column="36" selection-end-line="152" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -247,7 +282,21 @@
       <find>deep</find>
       <find>hot</find>
       <find>toast</find>
+      <find>survey</find>
+      <find>攻略</find>
+      <find>vo</find>
+      <find>游记</find>
+      <find>detail</find>
+      <find>travelPage</find>
+      <find>travels</find>
+      <find>strategy</find>
+      <find>author</find>
+      <find>dest</find>
+      <find>content</find>
     </findStrings>
+    <replaceStrings>
+      <replace>travel</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -255,57 +304,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../trip-member-server/src/main/java/cn/wolfcode/luowowo/member/mapper/UserInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/util/RedisKeys.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/exception/CommonExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/../trip-common/pom.xml" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/exception/LoginException.java" />
-        <option value="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/exception/LoginException.java" />
-        <option value="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AssertUtil.java" />
-        <option value="$PROJECT_DIR$/../trip-member-api/src/main/java/cn/wolfcode/luowowo/member/service/IUserInfoService.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/exception/CommonExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/interceptor/MyInterceptor.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/annotation/RequireLogin.java" />
-        <option value="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IUserInfoRedisService.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/interceptor/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/util/CookieUtil.java" />
-        <option value="$PROJECT_DIR$/../trip-member-server/src/main/java/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/webSite.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/annotation/UserParam.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/UserInfoRedisServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/param/UserInfoArgumentResolver.java" />
-        <option value="$PROJECT_DIR$/../trip-article-api/pom.xml" />
-        <option value="$PROJECT_DIR$/../trip-mgrsite/pom.xml" />
-        <option value="$PROJECT_DIR$/../trip-article-server/pom.xml" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/ActicleServer.java" />
-        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IRegionService.java" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/mapper/RegionMapper.xml" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/service/impl/RegionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/ActicleServer.java" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/RegionQuery.java" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/mapper/DestinationMapper.java" />
-        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/DestinationQuery.java" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/mapper/DestinationMapper.xml" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/louwowo/article/service/impl/DestinationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyQuery.java" />
-        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IDestionationService.java" />
-        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyController.java" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/ActicleServer.java" />
         <option value="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/query/QueryObject.java" />
         <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/DestionationController.java" />
         <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestionationController.java" />
         <option value="$PROJECT_DIR$/../trip-website/pom.xml" />
         <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IDestinationService.java" />
         <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/DestinationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/RegionController.java" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/StrategyDetailController.java" />
         <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyDetail.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml" />
+        <option value="$PROJECT_DIR$/../trip-member-server/src/main/java/cn/wolfcode/luowowo/member/service/impl/UserInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../trip-cache-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../trip-article-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/TravelCondition.java" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/travelTime.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/query/travelTime.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/query/travelDay.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/query/travelPreExpend.java" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/TravelQuery.java" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/util/UploadUtil.java" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/util/UMEditorUploader.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelContentMapper.xml" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Travel.java" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyQuery.java" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/StrategyController.java" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/list.ftl" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/TravelController.java" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/destination/list.ftl" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/ITravelService.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/TravelServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.java" />
+        <option value="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AjaxResult.java" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/util/AjaxResult.java" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/travel/list.ftl" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/travelController.java" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/util/JsonResult.java" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/DestinationQuery.java" />
         <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" />
         <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" />
         <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" />
-        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/RegionController.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/list.ftl" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.xml" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl" />
+        <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java" />
       </list>
     </option>
   </component>
@@ -331,6 +380,26 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="trip-article-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="trip-article-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="trip-article-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="trip-article-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="trip-article-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
         <path>
@@ -376,10 +445,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="352" />
-    <option name="y" value="3" />
+    <option name="x" value="100" />
+    <option name="y" value="68" />
     <option name="width" value="1527" />
-    <option name="height" value="1057" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -387,6 +456,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -497,205 +568,14 @@
             </path>
             <path>
               <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-common" type="462c0819:PsiDirectoryNode" />
+              <item name="trip-article-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
               <item name="trip-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="query" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="luowowo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="luowowo" type="462c0819:PsiDirectoryNode" />
-              <item name="mgrsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="luowowo" type="462c0819:PsiDirectoryNode" />
-              <item name="mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="luowowo" type="462c0819:PsiDirectoryNode" />
-              <item name="mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="destination" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="region" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="strategy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="strategyCatalog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="strategyCommend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="strategyDetail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="strategyTag" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="strategyTheme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
@@ -749,43 +629,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trip-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
@@ -795,13 +639,20 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="destination" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="travel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -813,25 +664,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../trip-member-server/src/main/java/cn/wolfcode/luowowo/member" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller" />
+    <property name="last_opened_file_path" value="D:/开源项目/magnetW-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.wolfcode.luowowo.mgrsite.controller" />
+      <recent name="cn.wolfcode.luowowo.website.util" />
       <recent name="cn.wolfcode.luowowo.website.controller" />
       <recent name="cn.wolfcode.luowowo.article.query" />
-      <recent name="cn.wolfcode.luowowo.mgrsite.controller" />
-      <recent name="cn.wolfcode.louwowo.article.service.impl" />
-      <recent name="cn.wolfcode.luowowo.article.service" />
+      <recent name="cn.wolfcode.luowowo.article.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\openprojects\project_luowowo\trip-mgrsite\src\main\java\cn\wolfcode\luowowo\mgrsite\controller" />
-      <recent name="D:\openprojects\project_luowowo\trip-article-server\src\main\java\cn\wolfcode\luowowo\article\service\impl" />
-      <recent name="D:\openprojects\project_luowowo\trip-article-server\src\main\java\cn\wolfcode\luowowo\article\mapper" />
-      <recent name="D:\openprojects\project_luowowo\trip-article-api\src\main\java\cn\wolfcode\luowowo\article\service" />
-      <recent name="D:\openprojects\project_luowowo\trip-article-api\src\main\java\cn\wolfcode\luowowo\article\query" />
+      <recent name="D:\openprojects\project_luowowo\trip-mgrsite\src\main\resources\templates\travel" />
+      <recent name="D:\openprojects\project_luowowo\trip-mgrsite\src\main\resources\templates" />
+      <recent name="D:\openprojects\project_luowowo\trip-website\src\main\java\cn\wolfcode\luowowo\website\util" />
+      <recent name="D:\openprojects\project_luowowo\trip-website\src\main\resources\templates" />
+      <recent name="D:\openprojects\project_luowowo\trip-article-api\src\main\java\cn\wolfcode\luowowo\article\domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -846,8 +697,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ActicleServer">
-    <configuration name="ActicleServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.MgrSite">
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="MemberServer" type="SpringBootApplicationConfigurationType" />
+      <toRun name="CacheServer" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ActicleServer" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="CompoundRunConfigurationType">
+      <toRun name="MemberServer" type="SpringBootApplicationConfigurationType" />
+      <toRun name="CacheServer" type="SpringBootApplicationConfigurationType" />
+      <toRun name="ActicleServer" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ActicleServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="trip-article-server" />
       <extension name="coverage">
         <pattern>
@@ -861,7 +724,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CacheServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CacheServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="trip-cache-server" />
       <extension name="coverage">
         <pattern>
@@ -874,7 +737,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="trip-member-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.wolfcode.luowowo.member.MemberServer" />
       <method v="2">
@@ -896,19 +759,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Compound.server" />
       <item itemvalue="Spring Boot.MgrSite" />
       <item itemvalue="Spring Boot.webSite" />
       <item itemvalue="Spring Boot.ActicleServer" />
       <item itemvalue="Spring Boot.CacheServer" />
       <item itemvalue="Spring Boot.MemberServer" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.ActicleServer" />
-        <item itemvalue="Spring Boot.CacheServer" />
-        <item itemvalue="Spring Boot.MemberServer" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -927,17 +784,20 @@
       <workItem from="1565267506866" duration="6932000" />
       <workItem from="1565310712885" duration="16907000" />
       <workItem from="1565398316275" duration="27680000" />
+      <workItem from="1565484488974" duration="26394000" />
+      <workItem from="1565538071393" duration="27359000" />
+      <workItem from="1565574363674" duration="26061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87679000" />
+    <option name="totallyTimeSpent" value="167493000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="352" y="3" width="1527" height="1057" extended-state="0" />
+    <frame x="100" y="68" width="1527" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4970874" visible="true" weight="0.3040218" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4970874" visible="true" weight="0.29175186" />
       <window_info id="Structure" order="1" sideWeight="0.5009709" side_tool="true" weight="0.2673016" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.50291264" side_tool="true" weight="0.2704762" />
@@ -947,9 +807,9 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3287841" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843792" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32719395" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49968255" weight="0.47995666" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49968255" visible="true" weight="0.32401657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -957,7 +817,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32719395" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3271028" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -978,249 +838,286 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Travel.java</url>
+          <line>17</line>
+          <properties field="STATE_NORMAL" class="cn.wolfcode.luowowo.article.domain.Travel" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/list.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1936" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/static/js/system/destionation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="92" column="37" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/DestinationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/RegionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/DestinationMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/RegionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/destination/guide.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/ActicleServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/common/navbar.ftl">
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/searchPageTpl.ftl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/hotdestTpl.ftl">
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/util/UploadUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/util/UMEditorUploader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_45/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/static/js/system/addtravelnote.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/static/js/system/guide.js">
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="-234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/guide.ftl">
+    <entry file="file://$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/query/QueryObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="56" column="40" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/common/toast.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyCommend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyCatalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyThemeQuery.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyCommendQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="132">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/StrategyQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="220">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyThemeService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyTagService.java">
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/StrategyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyThemeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/util/UploadUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyTagController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-348">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyCommendController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="394">
+          <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyTheme.java">
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelContentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelContentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategyTheme/list.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/travel/releaseList.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-484" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategyDetail/input.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/common/menu.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/destination/list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="79" column="18" lean-forward="true" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/input.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/strategyDetail/list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1760" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Destination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AjaxResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/Travel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/util/JsonResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/templates/travel/list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/DestinationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/DestionationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/travelController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyTag.java">
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/travelTpl.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="265">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/domain/StrategyDetail.java">
+    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/DestinationQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="308">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/survey.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="873">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyContentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyContentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="215" column="11" lean-forward="true" selection-start-line="215" selection-start-column="11" selection-end-line="215" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+        <state relative-caret-position="265">
+          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1229,135 +1126,119 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="147">
+          <caret line="140" column="45" lean-forward="true" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3750#3751#0" expanded="true" />
+            <element signature="e#3809#3810#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+            <element signature="e#3995#3996#0" expanded="true" />
+            <element signature="e#4062#4063#0" expanded="true" />
+            <element signature="e#4519#4520#0" expanded="true" />
+            <element signature="e#4563#4564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/destination/surveyTpl.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="e#1045#1051#0#HTML" expanded="true" />
+            <element signature="e#1051#1057#0#HTML" expanded="true" />
+            <element signature="e#1064#1070#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/TravelQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/TravelCommendServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="125">
+          <caret line="132" column="59" lean-forward="true" selection-start-line="132" selection-start-column="59" selection-end-line="132" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyThemeController.java">
+    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/ITravelService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/StrategyCatalogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyCatalogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="131">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/RegionQuery.java">
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/TravelServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="104" column="60" lean-forward="true" selection-start-line="104" selection-start-column="60" selection-end-line="104" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4035#4036#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-946">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="152" column="36" selection-start-line="152" selection-start-column="36" selection-end-line="152" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.2/dubbo-2.6.2.jar!/com/alibaba/dubbo/rpc/proxy/InvokerInvocationHandler.class">
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IDestinationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="556">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/DestinationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/RegionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-          <folding>
-            <element signature="e#1409#1410#0" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IRegionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/RegionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1364#1365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>

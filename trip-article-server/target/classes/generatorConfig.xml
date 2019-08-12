@@ -64,7 +64,13 @@
 		</javaClientGenerator>
 
 
-		<table tableName="Travel_Commend" domainObjectName="TravelCommend">
+		<table tableName="travel" domainObjectName="Travel">
+			<!-- 参考 javaModelGenerator 的 constructorBased属性 -->
+			<property name="constructorBased" value="false" />
+			<property name="useActualColumnNames" value="true" />
+			<generatedKey column="id" sqlStatement="JDBC"/>
+		</table>
+		<table tableName="travel_content" domainObjectName="TravelContent">
 			<!-- 参考 javaModelGenerator 的 constructorBased属性 -->
 			<property name="constructorBased" value="false" />
 			<property name="useActualColumnNames" value="true" />
