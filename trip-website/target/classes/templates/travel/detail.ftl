@@ -154,115 +154,122 @@
                 <div class="vc_article vc_articleT" >
                     ${(detail.travelContent.content)!}
                 </div>
-<#--                <div>-->
-<#--                    <div class="mfw-cmt-wrap" id="_j_reply_list">-->
-<#--                        <!--评论&ndash;&gt;-->
-<#--                        <#list list as c>-->
-<#--                            <div class="mfw-cmt _j_reply_item" >-->
-<#--                                <div class="mcmt-info">-->
-<#--                                    <div class="mcmt-photo">-->
-<#--                                        <a href="javascript:;" target="_blank">-->
-<#--                                            <img src="${c.headUrl!}"-->
-<#--                                                 width="48" height="48" alt="${c.username!}">-->
-<#--                                        </a>-->
-<#--                                    </div>-->
-<#--                                    <div class="mcmt-user">-->
-<#--                                        <a href="javascript:;" target="_blank" class="name">${c.username!}(${c.city!})</a>-->
-<#--                                        <a href="javascript:;" class="level">LV.${c.level!}</a>-->
-<#--                                        <a href="javascript:;" class="identity identity-guide" target="_blank"></a>-->
-<#--                                        <a href="javascript:void(0);" class="per_attention" data-japp="following"-->
-<#--                                           data-uid="76382990" data-follow_class="hide">-->
-<#--                                            <img src="http://images.mafengwo.net/images/home/tweet/btn_sfollow.gif"-->
-<#--                                                 width="38" height="13" border="0" title="关注TA">-->
-<#--                                        </a>-->
-<#--                                    </div>-->
-<#--                                    <div class="mcmt-other">-->
-<#--                                        <span class="floor">${c_index +1}F</span>-->
-<#--                                    </div>-->
-<#--                                </div>-->
-<#--                                <div class="mcmt-con-wrap clearfix">-->
-<#--                                    <div class="mcmt-con">-->
+                <div>
+                    <div class="mfw-cmt-wrap" id="_j_reply_list">
+                        <!--评论-->
+                        <#list list as c>
+                            <div class="mfw-cmt _j_reply_item" >
+                                <div class="mcmt-info">
+                                    <div class="mcmt-photo">
+                                        <a href="javascript:;" target="_blank">
+                                            <img src="${c.headUrl!}"
+                                                 width="48" height="48" alt="${c.username!}">
+                                        </a>
+                                    </div>
+                                    <div class="mcmt-user">
+                                        <a href="javascript:;" target="_blank" class="name">${c.username!}(${c.city!})</a>
+                                        <a href="javascript:;" class="level">LV.${c.level!}</a>
+                                        <a href="javascript:;" class="identity identity-guide" target="_blank"></a>
+                                        <a href="javascript:void(0);" class="per_attention" data-japp="following"
+                                           data-uid="76382990" data-follow_class="hide">
+                                            <img src="http://images.mafengwo.net/images/home/tweet/btn_sfollow.gif"
+                                                 width="38" height="13" border="0" title="关注TA">
+                                        </a>
+                                    </div>
+                                    <div class="mcmt-other">
+                                        <span class="floor">${c_index +1}F</span>
+                                    </div>
+                                </div>
+                                <div class="mcmt-con-wrap clearfix">
+                                    <div class="mcmt-con">
 
-<#--                                    <#if c.type == 1>-->
-<#--                                        <div class="mcmt-quote">-->
-<#--                                            <p>引用 ${(c.refComment.username)!} 发表于 ${(c.refComment.createTime?string('yyyy-MM-dd HH:ss'))!} 的回复：</p>-->
-<#--                                            <p class="_j_reply_content">${(c.refComment.content)!}</p>-->
-<#--                                        </div>-->
-<#--                                        <div class="mcmt-word">-->
-<#--                                            <p class="_j_reply_content" >回复${(c.refComment.username)!}：${(c.content)!}</p>-->
-<#--                                        </div>-->
-<#--                                    <#else>-->
-<#--                                        <div class="mcmt-quote">-->
-<#--                                        </div>-->
-<#--                                        <div class="mcmt-word">-->
-<#--                                            <p class="_j_reply_content">${(c.content)!}</p>-->
-<#--                                        </div>-->
-<#--                                    </#if>-->
-<#--                                    </div>-->
-<#--                                    <div class="mcmt-tag">-->
-<#--                                    </div>-->
-<#--                                </div>-->
-<#--                                <div class="mcmt-bot">-->
-<#--                                    <div class="time">${(c.createTime?string('yyyy-MM-dd HH:ss'))!}</div>-->
-<#--                                    <div class="option">-->
-<#--                                        <a role="button" class="reply-report">举报</a>-->
-<#--                                        <a role="button" class="_j_reply replyBtn" data-touser="${c.username!}" data-toid="${c.id!}">回复</a>-->
-<#--                                    </div>-->
-<#--                                </div>-->
-<#--                            </div>-->
-<#--                        </#list>-->
-<#--                    </div>-->
-<#--                    <!--发表回复&ndash;&gt;-->
-<#--                    <div class="mcmt-reply-wrap _j_replywrap ">-->
-<#--                        <div class="mcmt-tab">-->
-<#--                            <ul class="_j_replytab">-->
-<#--                                <li class="_j_publish_tab on" data-mode="article">回复游记<i></i></li>-->
-<#--                            </ul>-->
-<#--                        </div>-->
-<#--                        <div class="mcmt-tab-con">-->
-<#--                            <div class="photo-con">-->
-<#--                                <a href="/u/53383161.html" target="_blank" title="蚂蜂测试窝用户"><img-->
-<#--                                        src="http://n1-q.mafengwo.net/s12/M00/35/98/wKgED1uqIreAU9QZAAAXHQMBZ74008.png?imageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90"-->
-<#--                                        alt="骡窝窝测试用户"></a>-->
-<#--                            </div>-->
-<#--                            <div class="reply-con clearfix _j_article_mode _j_editor" id="_j_editor"-->
-<#--                                style="display: block;">-->
-<#--                                <dl>-->
-<#--                                    <dt>-->
-<#--                                        <!-- 各种选项&ndash;&gt;-->
-<#--                                        <div class="reply-choice">-->
-<#--                                            <a role="button" class="expression" id="_j_replyfacetrigger"-->
-<#--                                                title="选择表情"></a>-->
-<#--                                            <div class="clear"></div>-->
-<#--                                             <!--表情&ndash;&gt;-->
-<#--                                            <#include "../common/emotion.ftl">-->
-<#--                                        </div>-->
-<#--                                    </dt>-->
-<#--                                    <dd>-->
-<#--                                        <div class="reply-text">-->
+                                    <#if c.type == 1>
+                                        <div class="mcmt-quote">
+                                            <p>引用 ${(c.refComment.username)!} 发表于 ${(c.refComment.createTime?string('yyyy-MM-dd HH:mm'))!} 的回复：</p>
+                                            <p class="_j_reply_content">${(c.refComment.content)!}</p>
+                                        </div>
+                                        <div class="mcmt-word">
+                                            <p class="_j_reply_content" >回复${(c.refComment.username)!}：${(c.content)!}</p>
+                                        </div>
+                                    <#else>
+                                        <div class="mcmt-quote">
+                                        </div>
+                                        <div class="mcmt-word">
+                                            <p class="_j_reply_content">${(c.content)!}</p>
+                                        </div>
+                                    </#if>
+                                    </div>
+                                    <div class="mcmt-tag">
+                                    </div>
+                                </div>
+                                <div class="mcmt-bot">
+                                    <div class="time">${(c.createTime?string('yyyy-MM-dd HH:mm'))!}</div>
+                                    <div class="option">
+                                        <a role="button" class="reply-report">举报</a>
+                                        <a role="button" class="_j_reply replyBtn" data-touser="${c.username!}" data-toid="${c.id!}">回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </#list>
+                    </div>
+                    <!--发表回复-->
+                    <div class="mcmt-reply-wrap _j_replywrap ">
+                        <div class="mcmt-tab">
+                            <ul class="_j_replytab">
+                                <li class="_j_publish_tab on" data-mode="article">回复游记<i></i></li>
+                            </ul>
+                        </div>
+                        <div class="mcmt-tab-con">
+                            <div class="photo-con">
+                                <#if userInfo?? >
+                                <a href="/u/53383161.html" target="_blank" title="蚂蜂测试窝用户"><img
+                                        src="${userInfo.headImgUrl}"
+                                        alt="FWJ"></a>
+                                <#else>
+                                    <a href="/u/53383161.html" target="_blank" title="蚂蜂测试窝用户"><img
+                                                src="http://n1-q.mafengwo.net/s12/M00/35/98/wKgED1uqIreAU9QZAAAXHQMBZ74008.png?imageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90"
+                                                alt="骡窝窝测试用户"></a>
 
-<#--                                            <form action="/travel/commentAdd" method="post" id="commentForm">-->
-<#--                                                <input type="hidden" name="travelId" value="${detail.id!}">-->
-<#--                                                <input type="hidden" name="travelTitle" value="${detail.title!}">-->
-<#--                                                <input type="hidden" name="type" value="0" id="commentType">-->
-<#--                                                <input type="hidden" name="refComment.id" id="refCommentId">-->
-<#--                                                <input type="hidden" name="floor" value="${(list?size)!0}">-->
+                                </#if>
+                            </div>
+                            <div class="reply-con clearfix _j_article_mode _j_editor" id="_j_editor"
+                                style="display: block;">
+                                <dl>
+                                    <dt>
+                                        <!-- 各种选项-->
+                                        <div class="reply-choice">
+                                            <a role="button" class="expression" id="_j_replyfacetrigger"
+                                                title="选择表情"></a>
+                                            <div class="clear"></div>
+                                             <!--表情-->
+                                            <#include "../common/emotion.ftl">
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        <div class="reply-text">
 
-<#--                                                <textarea class="_j_replyarea" name="content" cols="30" rows="10" id="commentContent"-->
-<#--                                                    placeholder=""></textarea>-->
+                                            <form action="/travel/commentAdd" method="post" id="commentForm">
+                                                <input type="hidden" name="travelId" value="${detail.id!}">
+                                                <input type="hidden" name="travelTitle" value="${detail.title!}">
+                                                <input type="hidden" name="type" value="0" id="commentType">
+                                                <input type="hidden" name="refComment.id" id="refCommentId">
+                                                <input type="hidden" name="floor" value="${(list?size)!0}">
 
-<#--                                            </form>-->
-<#--                                        </div>-->
-<#--                                    </dd>-->
-<#--                                </dl>-->
-<#--                                <div class="reply-submit">-->
-<#--                                    <!-- 有loading状态 &ndash;&gt;-->
-<#--                                    <a role="button" class="_j_publish_reply commentBtn" title="发表回复">发表回复</a>-->
-<#--                                </div>-->
-<#--                            </div>-->
-<#--                        </div>-->
-<#--                    </div>-->
-<#--                </div>-->
+                                                <textarea class="_j_replyarea" name="content" cols="30" rows="10" id="commentContent"
+                                                    placeholder=""></textarea>
+
+                                            </form>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="reply-submit">
+                                    <!-- 有loading状态 -->
+                                    <a role="button" class="_j_publish_reply commentBtn" title="发表回复">发表回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="view_side">
                 <div class="relations _j_stas_content">

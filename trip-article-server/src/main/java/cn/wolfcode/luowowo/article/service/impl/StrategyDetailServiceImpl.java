@@ -141,9 +141,14 @@ public class StrategyDetailServiceImpl implements IStrategyDetailService {
         return strategyDetailMapper.getByCatalogId(catalogId);
     }
 
+    @Override
+    public void updateCommentNumById(Long detailId) {
+        strategyDetailMapper.updateCommentNumById(detailId);
 
-//    @Override
-//    public void updateStatisData(StrategyPersistenceStatisVO vo) {
-//        strategyDetailMapper.updateStatisData(vo);
-//    }
+    }
+
+
+
+
+
 }

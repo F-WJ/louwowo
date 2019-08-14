@@ -25,7 +25,7 @@
 
         <#if c.type == 1>
             <div class="mcmt-quote">
-                <p>引用 ${(c.refComment.username)!} 发表于 ${(c.refComment.createTime?string('yyyy-MM-dd HH:ss'))!} 的回复：</p>
+                <p>引用 ${(c.refComment.username)!} 发表于 ${(c.refComment.createTime?string('yyyy-MM-dd HH:mm'))!} 的回复：</p>
                 <p class="_j_reply_content">${(c.refComment.content)!}</p>
             </div>
             <div class="mcmt-word">
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="mcmt-bot">
-        <div class="time">${(c.createTime?string('yyyy-MM-dd HH:ss'))!}</div>
+        <div class="time">${(c.createTime?string('yyyy-MM-dd HH:mm'))!}</div>
         <div class="option">
             <a role="button" class="reply-report">举报</a>
             <a role="button" class="_j_reply replyBtn" data-touser="${c.username!}" data-toid="${c.id!}">回复</a>

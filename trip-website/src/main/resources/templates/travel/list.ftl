@@ -15,10 +15,27 @@
 
     <script type="text/javascript" src="/js/plugins/zebrazooltips/public/javascript/zebra_tooltips.js"></script>
 
+    <script type="text/javascript" src="/js/system/emoji.js"></script>
+
 
 </head>
 
 <script>
+
+    function emoji(str) {
+        //匹配中文
+        var reg = /\([\u4e00-\u9fa5A-Za-z]*\)/g;
+        var matchArr = str.match(reg);
+        if(!matchArr){
+            return str;
+        }
+        for(var i = 0; i < matchArr.length; i++){
+            str = str.replace(matchArr[i], '<img src="'+EMOJI_MAP[matchArr[i]]+'"style="width: width:1;"/>')
+        }
+        return str;
+    }
+
+
     $(function () {
 
         //编写游记检测是否登录
@@ -61,7 +78,11 @@
 
 
 
-
+        //替换表情
+        var ps = $("._j_reply_content");
+        for(var i = 0;i < ps.length; i++){
+            $(ps[i]).html( emoji($(ps[i]).html() + ""));
+        }
 
 
     })
@@ -219,19 +240,19 @@
                     </li>
                 </ol>
             </div>
-            <div class="m-box m-comm">
+            <div class="m-box m-comm ajaxComment">
                 <div class="hd">
                     <h2><i></i>最新游记动态</h2>
                 </div>
                 <div class="bd">
                     <ul id="_j_new_action_list" style="height: auto; overflow:hidden">
 
-                       <#-- <#list tcs as tc>
+                       <#list tcs as tc>
                             <li data-action_id="19886923">
                                 <a href="javascript:;" target="_blank" rel="nofollow">
                                     <img src="${tc.headUrl!}"  rel="nofollow">${tc.username!}
                                 </a>刚刚点评了
-                                <a href="javascript:;" target="_blank" title="新加坡植物园(Singapore Botanic Gardens)">
+                                <a href="/travel/detail?id=${tc.travelId}" target="_blank" title="${tc.travelTitle}">
 
                                     <#if tc.travelTitle?length <5 >
                                         ${tc.travelTitle}
@@ -240,7 +261,8 @@
                                     </#if>
 
                                 </a>
-                                <p>
+
+                                <p  class="_j_reply_content">
                                     <#if tc.content?length <10 >
                                         ${tc.content}
                                     <#else>
@@ -248,8 +270,14 @@
                                     </#if>
                                 </p>
                             </li>
-                        </#list>-->
+                        </#list>
+
+
                     </ul>
+
+
+
+
                 </div>
             </div>
         </div>

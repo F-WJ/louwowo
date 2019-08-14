@@ -7,7 +7,7 @@
         </div>
         <div class="info">
             <h3>${c.username!}</h3>
-            <h4>${c.createTime?string('yyyy-MM-dd HH:ss')}</h4>
+            <h4>${c.createTime?string('yyyy-MM-dd HH:mm')}</h4>
             <div class="com-cont">${c.content!}</div>
             <div class="rep-del hide" style="display: none;">
                 <i></i>
@@ -15,7 +15,7 @@
                 </a>
                 <i></i>
                 <a href="javascript:;" class="btn-comment-like _j_like_comment_btn
-                     ${c.thumbuplist?seq_contains(userInfo.id)?string("liked", "like")}
+                     ${(c.thumbuplist?seq_contains(userInfo.id)?string("liked", "like"))!}
                 " data-toid="${c.id}" data-fromid="${(userInfo.id)!-1}">
                     <span class="_j_comment_like_num">${c.thumbupnum!}</span>
                 </a>

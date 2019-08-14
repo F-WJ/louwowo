@@ -32,4 +32,6 @@ public interface StrategyDetailMapper {
     List<StrategyDetail> getDetailByTag(StrategyQuery qo);
 
     StrategyDetail getByCatalogId(Long catalogId);
+
+    void updateCommentNumById(Long detailId);
 }

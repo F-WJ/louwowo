@@ -51,6 +51,7 @@
     <div class="mfw-focus" id="_j_mfw_focus">
         <div class="show-slider" style="height: 450px;">
             <ul class="show-image">
+                <#if tcs>
                 <#list  tcs as tc>
                     <li class="${(tc_index==0)?string('first','')}">
                         <a href="/travel/detail?id=${tc.travelId!}" class="show-pic">
@@ -64,6 +65,7 @@
                         </a>
                     </li>
                 </#list>
+                </#if>
             </ul>
             <ul class="show-nav">
                  <#list  tcs as tc>

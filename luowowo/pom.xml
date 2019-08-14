@@ -19,6 +19,8 @@
         <module>../trip-article-api</module>
         <module>../trip-article-server</module>
         <module>../trip-mgrsite</module>
+        <module>../trip-comment-api</module>
+        <module>../trip-comment-server</module>
     </modules>
 
     <parent>

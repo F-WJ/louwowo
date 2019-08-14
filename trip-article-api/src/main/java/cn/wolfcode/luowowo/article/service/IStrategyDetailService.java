@@ -71,4 +71,6 @@ public interface IStrategyDetailService {
 
     StrategyDetail getByCatalogId(Long catalogId);
 
+
+    void updateCommentNumById(Long detailId);
 }

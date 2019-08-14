@@ -225,4 +225,8 @@
       sharenum = #{sharenum},
       thumbsupnum = #{thumbsupnum}   where id = #{strategyId}
   </update>
+    <update id="updateCommentNumById">
+      update strategy_detail set   replynum = replynum + 1
+        where id = #{detailId}
+    </update>
 </mapper>

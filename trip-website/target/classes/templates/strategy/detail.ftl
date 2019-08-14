@@ -6,12 +6,17 @@
     <title></title>
     <link href="/styles/base.css" rel="stylesheet" type="text/css">
     <link href="/styles/strategyDetail.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/js/plugins/zebrazooltips/public/css/zebra_tooltips.css" type="text/css">
+
     <script type="text/javascript" src="/js/jquery/jquery.js"></script>
     <script type="text/javascript" src="/js/plugins/jquery-form/jquery.form.js"></script>
     <link href="/js/plugins/jqPaginator/jqPagination.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/plugins/jqPaginator/jq-paginator.min.js"></script>
     <script type="text/javascript" src="/js/system/strategyDetail.js"></script>
     <script type="text/javascript" src="/js/system/common.js"></script>
+
+    <script type="text/javascript" src="/js/plugins/zebrazooltips/public/javascript/zebra_tooltips.js"></script>
 
     <script>
        $(function () {
@@ -21,27 +26,47 @@
            });
            $("#searchForm").submit();
 
+
+
+
+           //没有登录弹出显示信息
+           $(document).ready(function() {
+               new $.Zebra_Tooltips($('.zebra_tips1'));
+           });
+
            //发表评论
            $("#commentBtn").click(function () {
 
-               var content = $("#content").val();
-               if(!content){
-                   popup("评论内容必填");
-                   return;
-               }
-               $("#content").val('');
-               var detailId = $(this).data("detailid");
-               var detailTitle = $(this).data("title");
+               //判断是否已经登录
+               var user = $(this).data("user");
+               console.log(user);
+               if(user == "") {
+                   window.location.href = "/login.html";
+               }else {
 
-               $.post("/strategy/commentAdd", {detailId: detailId, content:content, detailTitle: detailTitle}, function (data) {
-                   if(data.success){
-                       //修改评论数
-                       $(".replay_num").html(data.data);
-
-                       $("#currentPage").val(1);
-                       $("#searchForm").submit();  //重新插一次
+                   var content = $("#content").val();
+                   if (!content) {
+                       popup("评论内容必填");
+                       return;
                    }
-               });
+                   $("#content").val('');
+                   var detailId = $(this).data("detailid");
+                   var detailTitle = $(this).data("title");
+
+                   $.post("/strategy/commentAdd", {
+                       detailId: detailId,
+                       content: content,
+                       detailTitle: detailTitle
+                   }, function (data) {
+                       if (data.success) {
+                           //修改评论数
+                           $(".replay_num").html(data.data);
+
+                           $("#currentPage").val(1);
+                           $("#searchForm").submit();  //重新插一次
+                       }
+                   });
+               }
            })
 
            //顶：点赞
@@ -161,10 +186,17 @@
                     </div>
                     <div class="fm-tare user-log">
                         <textarea class="_j_comment_content" id="content"></textarea>
-                        <button type="button" class="_j_save_comment" id="commentBtn" data-detailid="${detail.id!}"
 
+                        <#if userInfo??>
+                        <button type="button" class="_j_save_comment" id="commentBtn" data-detailid="${detail.id!}"
                            data-title="${detail.title}"
                         >评论</button>
+                            <#else>
+                                <button type="button" class="_j_save_comment zebra_tips1" title="亲，请登录账户，可以点击一下评论按钮进入登录页面" id="commentBtn" data-detailid="${detail.id!}"
+                                        data-title="${detail.title}"  data-user = "${userInfo!}"
+                                >评论</button>
+                        </#if>
+
                     </div>
                 </div>
                 <!--评论-->

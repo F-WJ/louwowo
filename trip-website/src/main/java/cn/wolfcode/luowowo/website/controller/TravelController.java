@@ -6,6 +6,9 @@ import cn.wolfcode.luowowo.article.query.TravelQuery;
 import cn.wolfcode.luowowo.article.service.IDestinationService;
 import cn.wolfcode.luowowo.article.service.IStrategyDetailService;
 import cn.wolfcode.luowowo.article.service.ITravelService;
+import cn.wolfcode.luowowo.comment.domain.TravelComment;
+import cn.wolfcode.luowowo.comment.query.TravelCommentQuery;
+import cn.wolfcode.luowowo.comment.service.ITravelCommentService;
 import cn.wolfcode.luowowo.common.util.AjaxResult;
 import cn.wolfcode.luowowo.member.domain.UserInfo;
 import cn.wolfcode.luowowo.website.annotation.UserParam;
@@ -14,6 +17,7 @@ import cn.wolfcode.luowowo.website.util.UploadUtil;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
 import org.springframework.http.codec.json.AbstractJackson2Decoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,6 +27,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -39,12 +45,57 @@ public class TravelController {
     @Reference
     private IStrategyDetailService strategyDetailService;
 
+    @Reference
+    private ITravelCommentService travelCommentService;
+
+
+
+
+    //评论
+    @RequestMapping("/commentAdd")
+    public String commentAdd(Long floor, Model model, TravelComment travelComment, @UserParam UserInfo userInfo){
+
+        //设置部分值
+        travelComment.setCity(userInfo.getCity());
+        travelComment.setLevel(userInfo.getLevel());
+        travelComment.setCreateTime(new Date());
+        travelComment.setHeadUrl(userInfo.getHeadImgUrl());
+        //保存
+        travelCommentService.saveOrUpdate(travelComment);
+        model.addAttribute("c", travelComment);
+        model.addAttribute("floor", floor + 1);
+        return "travel/commentTpl";
+
+    }
+
+
+
+
+
+
+
+
 
     @RequestMapping("")
     public String list(Model model, @ModelAttribute("qo") TravelQuery qo, @UserParam UserInfo userInfo){
         //展示已发布的游记
         PageInfo<Travel> pageInfo = travelService.selectTravelByState(qo, Travel.STATE_RELEASE);
         model.addAttribute("pageInfo", pageInfo);
+
+        //回显最新的十条游记评论
+        TravelCommentQuery travelCommentQuery = new TravelCommentQuery();
+        travelCommentQuery.setCurrentPage(1);
+        travelCommentQuery.setPageSize(Integer.MAX_VALUE);
+        Page page = travelCommentService.query(travelCommentQuery);
+        int size = page.getContent().size();
+        List content = page.getContent();
+        if(page.getContent().size() >= 10){
+            content = content.subList(0, 10);
+        }
+
+        model.addAttribute("tcs", content);
+
+
 
         return "travel/list";
     }
@@ -56,6 +107,7 @@ public class TravelController {
         model.addAttribute("dests", destinations);
         if(id != null){
             //回显文章
+
             Travel travel = travelService.get(id);
             TravelContent content = travelService.getContent(id);
             travel.setTravelContent(content);
@@ -92,6 +144,14 @@ public class TravelController {
 
         //回显当前用户
         model.addAttribute("userInfo", userInfo);
+
+        //回显评论
+        TravelCommentQuery travelCommentQuery = new TravelCommentQuery();
+        travelCommentQuery.setTravelId(id);
+        travelCommentQuery.setCurrentPage(1);
+        travelCommentQuery.setPageSize(Integer.MAX_VALUE);
+        Page page = travelCommentService.query(travelCommentQuery);
+        model.addAttribute("list", page.getContent());
 
         return "/travel/detail";
 

@@ -15,7 +15,9 @@ public class AjaxResult {
 
     private boolean success = true;
 
-    private Long data;
+    private Object data;
+
+
 
 
     public AjaxResult(){
