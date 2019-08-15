@@ -6,6 +6,8 @@ import cn.wolfcode.luowowo.article.query.TravelQuery;
 import cn.wolfcode.luowowo.article.service.IDestinationService;
 import cn.wolfcode.luowowo.article.service.IStrategyDetailService;
 import cn.wolfcode.luowowo.article.service.ITravelService;
+import cn.wolfcode.luowowo.cache.service.ITravelDetailRedisService;
+import cn.wolfcode.luowowo.cache.vo.TravelStatisVO;
 import cn.wolfcode.luowowo.comment.domain.TravelComment;
 import cn.wolfcode.luowowo.comment.query.TravelCommentQuery;
 import cn.wolfcode.luowowo.comment.service.ITravelCommentService;
@@ -48,7 +50,31 @@ public class TravelController {
     @Reference
     private ITravelCommentService travelCommentService;
 
+    @Reference
+    private ITravelDetailRedisService travelDetailRedisService;
 
+
+
+
+    //顶数（点赞）
+    @RequestMapping("/strategyThumbup")
+    @ResponseBody
+    public AjaxResult strategyThumbup(Long tid, @UserParam UserInfo userInfo){
+        AjaxResult ajaxResult = travelDetailRedisService.saveThumbsupnum(tid, userInfo.getId());
+
+        return ajaxResult;
+    }
+
+
+    //收藏数
+    @RequestMapping("/favor")
+    @ResponseBody
+    public AjaxResult favor(Long tid, @UserParam UserInfo userInfo){
+
+        AjaxResult ajaxResult = travelDetailRedisService.saveFavornum(tid, userInfo.getId());
+
+        return ajaxResult;
+    }
 
 
     //评论
@@ -152,6 +178,18 @@ public class TravelController {
         travelCommentQuery.setPageSize(Integer.MAX_VALUE);
         Page page = travelCommentService.query(travelCommentQuery);
         model.addAttribute("list", page.getContent());
+
+
+        //通过redis添加阅读数数
+        TravelStatisVO vo = travelDetailRedisService.setViewNum(id);
+        //回显阅读数数据
+        model.addAttribute("vo", vo);
+
+        //判断用户是否已经收藏
+        if(userInfo != null) {
+            boolean isFavor = travelDetailRedisService.isFavorBy(id, userInfo.getId());
+            model.addAttribute("isFavor", isFavor);
+        }
 
         return "/travel/detail";
 

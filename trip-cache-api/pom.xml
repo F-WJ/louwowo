@@ -36,6 +36,12 @@
             <version>1.0.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>cn.wolfcode.luowowo</groupId>
+            <artifactId>trip-article-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>

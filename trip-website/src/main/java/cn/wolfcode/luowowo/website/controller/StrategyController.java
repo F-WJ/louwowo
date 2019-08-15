@@ -9,6 +9,8 @@ import cn.wolfcode.luowowo.article.query.StrategyQuery;
 import cn.wolfcode.luowowo.article.service.IDestinationService;
 import cn.wolfcode.luowowo.article.service.IStrategyDetailService;
 import cn.wolfcode.luowowo.article.service.IStrategyTagService;
+import cn.wolfcode.luowowo.cache.service.IStrategyDetailRedisService;
+import cn.wolfcode.luowowo.cache.vo.StrategyStatisVO;
 import cn.wolfcode.luowowo.comment.domain.StrategyComment;
 import cn.wolfcode.luowowo.comment.query.StrategyCommentQuery;
 import cn.wolfcode.luowowo.comment.service.IStrategyCommentService;
@@ -24,6 +26,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.jws.soap.SOAPBinding;
 import java.util.Date;
 import java.util.List;
 
@@ -43,13 +46,37 @@ public class StrategyController {
     @Reference
     private IStrategyCommentService strategyCommentService;
 
+    @Reference
+    private IStrategyDetailRedisService strategyDetailRedisService;
 
+
+    //顶数（点赞）
+    @RequestMapping("/strategyThumbup")
+    @ResponseBody
+    public AjaxResult strategyThumbup(Long sid, @UserParam UserInfo userInfo){
+        AjaxResult ajaxResult = strategyDetailRedisService.saveThumbsupnum(sid, userInfo.getId());
+
+        return ajaxResult;
+    }
+
+
+
+
+    //收藏数
+    @RequestMapping("/favor")
+    @ResponseBody
+    public AjaxResult favor(Long sid, @UserParam UserInfo userInfo){
+
+        AjaxResult ajaxResult = strategyDetailRedisService.saveFavornum(sid, userInfo.getId());
+
+        return ajaxResult;
+    }
 
 
     //评论
     @RequestMapping("/commentAdd")
     @ResponseBody
-    public AjaxResult commentAdd(StrategyComment strategyComment, @UserParam UserInfo userInfo){
+    public AjaxResult commentAdd(@ModelAttribute("vo") StrategyStatisVO vo,StrategyComment strategyComment, @UserParam UserInfo userInfo){
 
         //设置部分值
         //用户
@@ -64,9 +91,12 @@ public class StrategyController {
         strategyCommentService.saveOrUpdate(strategyComment);
         //修改评论数
         AjaxResult result = new AjaxResult();
-        strategyDetailService.updateCommentNumById(strategyComment.getDetailId());
-        StrategyDetail strategyDetail = strategyDetailService.get(strategyComment.getDetailId());
-        result.setData(strategyDetail.getReplynum());
+//        strategyDetailService.updateCommentNumById(strategyComment.getDetailId());
+//        StrategyDetail strategyDetail = strategyDetailService.get(strategyComment.getDetailId());
+
+        //使用redis保存评论数
+        vo = strategyDetailRedisService.saveReplynum(strategyComment.getDetailId());
+        result.setData(vo.getReplynum());
 
 
         return result;
@@ -101,7 +131,20 @@ public class StrategyController {
         detail.setStrategyContent(content);
         model.addAttribute("detail", detail);
         model.addAttribute("userInfo", userInfo);
-        //
+
+
+
+        //通过redis添加阅读数数
+        StrategyStatisVO vo = strategyDetailRedisService.setViewNum(id);
+        //回显阅读数数据
+        model.addAttribute("vo", vo);
+
+        //判断用户是否已经收藏
+        if(userInfo != null) {
+            boolean isFavor = strategyDetailRedisService.isFavorBy(id, userInfo.getId());
+            model.addAttribute("isFavor", isFavor);
+        }
+
         return "/strategy/detail";
     }
 

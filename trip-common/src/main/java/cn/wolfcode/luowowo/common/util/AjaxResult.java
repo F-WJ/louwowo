@@ -4,10 +4,12 @@ import jdk.nashorn.internal.ir.annotations.Reference;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 
 @Setter
 @Getter
-public class AjaxResult {
+public class AjaxResult implements Serializable {
 
 
 

@@ -6,18 +6,33 @@
     <title></title>
     <link href="/styles/base.css" rel="stylesheet" type="text/css">
     <link href="/styles/travelnotedetail.css" rel="stylesheet" type="text/css">
+    <link href="/styles/strategyDetail.css" rel="stylesheet" type="text/css">
+
     <script type="text/javascript" src="/js/jquery/jquery.js"></script>
     <script type="text/javascript" src="/js/plugins/jquery-form/jquery.form.js"></script>
     <script type="text/javascript" src="/js/system/travelnotedetail.js"></script>
     <script type="text/javascript" src="/js/system/emoji.js"></script>
+    <script type="text/javascript" src="/js/plugins/d-toast/js/d-toast.min.js"></script>
+
 
     <style>
         .vc_articleT  img{
             width: 100%;
         }
+
+
+        .zoom-image{
+            width:100%;height:0;padding-bottom: 100%;overflow:hidden;background-position: center center;background-repeat: no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;}.d-toast-icon{width:50px;height:50px;margin: auto;margin-left:20px;  position: absolute;  top: 0; left: 0; bottom: 0; right: 0;}.d-toast-close:hover{color:#FFFFFF !important}.d-toast{moz-user-select: -moz-none;-moz-user-select: none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;animation:d-toast-left-in 0.5s;-moz-animation:d-toast-left-in 0.5s; /* Firefox */-webkit-animation:d-toast-left-in 0.5s; /* Safari and Chrome */-o-animation:d-toast-left-in 0.5s; /* Opera */}.d-toast-close::before{content:"＋";}@keyframes d-toast-left-in{from {right:-400px ;}to {right:30px;}}@-moz-keyframes d-toast-left-in /* Firefox */{from {right:-400px;}to {right:30px;}}@-webkit-keyframes d-toast-left-in /* Safari 和 Chrome */{from {right:-400px;}to {right:30px;}}@-o-keyframes d-toast-left-in /* Opera */{from {right:-400px;}to {right:30px;}}@keyframes d-toast-right-out{from{right: 30px;}to{right: -400px;}}@-webkit-keyframes d-toast-right-out{from{right: 30px;}to{right: -400px;}}@-moz-keyframes d-toast-right-out{from{right: 30px;}to{right: -400px;}}@-o-keyframes d-toast-right-out{from{right: 30px;}to{right: -400px;}}.d-toast-close-start{animation: d-toast-right-out 0.5s;-webkit-animation: d-toast-right-out 0.5s;-moz-animation: d-toast-right-out 0.5s;-o-animation: d-toast-right-out 0.5s;}
     </style>
 
     <script>
+
+
+
+
+
+
+
 
         function emoji(str) {
             //匹配中文
@@ -34,6 +49,104 @@
 
 
         $(function () {
+
+
+            //收藏
+            $(".btn-collect").click(function () {
+                var tid = $(this).data("tid");
+                $.get("/travel/favor", {tid:tid}, function (data) {
+                    console.log(data);
+
+                    if(data.success){
+                        $(".favorite_num").html(data.data.favornum);
+                        $(".collect_icon").addClass("on-i02")
+                        testInner("收你条毛",true)
+                    }else{
+                        if(data.code == 102){
+                            $(".collect_icon").removeClass("on-i02")
+                            testInner("取消你条毛",true)
+                        }else{
+                            $(".collect_icon").removeClass("on-i02")
+                            $(".favorite_num").html(data.data.favornum);
+                            testInner("取消你条毛",true)
+                        }
+                    }
+                });
+            })
+
+
+            //顶：点赞
+            $(".up_act").click(function () {
+                var tid = $(this).data("tid");
+                $.get("/travel/strategyThumbup", {tid:tid}, function (data) {
+                    if(data.success){
+                        $(".support_num").html(data.data.thumbsupnum);
+                        popup("顶你个肺啦"); //
+
+                    }else{
+                        if(data.code == 102){
+                            popup(data.msg);
+                        }else{
+                            testInner("顶过了，扑你条街",true)
+                        }
+
+                    }
+                });
+            })
+
+
+
+            function test(i,isShowIcon){
+
+                //需允许浏览器通知
+
+                var config={
+                    title:i,//通知标题部分  默认 新消息   可选
+                    // body:"test",//通知内容部分
+                    data:"abc2",// 是浏览器仿桌面通知 否首选桌面通知 默认否 可选
+                    onclick:function(data){//监听点击通知   data:可传递参数 可选
+                        new dToast("桌面通知被点击了 传递参数："+data);
+                    },
+                }
+                if(isShowIcon==true){
+                    config.icon="img/thumb-"+i+".jpg";//通知的图片 可选
+                }
+
+                //桌面通知
+                new dToast(config);
+            }
+
+            function testInner(i,isShowIcon){
+
+                var config={
+                    title:i,//通知标题部分  默认 新消息   可选
+                    // body:"test",//通知内容部分
+                    inner:true, // 是浏览器仿桌面通知 否首选桌面通知 默认否 可选
+                    onclick:function(data){ //监听点击通知   data:可传递参数 可选
+                        new dToast("仿桌面通知被点击了 传递参数："+data);
+                    },
+                    data:"我是仿桌面通知的参数",//可传递参数 可选
+                    timeout:10000 // 自动关闭 单位毫秒 默认 6500毫秒   timeout<=0 不自动关闭  可选
+                }
+
+                if(isShowIcon==true){
+                    config.icon="img/thumb-"+i+".jpg";//通知的图片 可选
+                }
+
+                //仿桌面通知
+                new dToast(config);
+            }
+
+            function testOnlyContent(){
+                new dToast(el.value);
+            }
+
+
+
+
+
+
+
             var index = 0;
             //回复
             $("#_j_reply_list").on("click", ".replyBtn",function () {
@@ -94,8 +207,8 @@
             <div id="pagelet-block-a674ace86856fc38da868e9d1ed7b49c" class="pagelet-block">
                 <div class="vt_center">
                     <div class="ding _j_ding_father">
-                        <a role="button" data-japp="articleding" rel="nofollow" data-iid="12655354" data-vote="7" class="up_act " title="顶">顶</a>
-                        <div class="num _j_up_num topvote12655354">${detail.thumbsupnum!}</div>
+                        <a role="button" data-japp="articleding" rel="nofollow" data-iid="12655354"  data-tid="${detail.id!}" data-vote="7" class="up_act" title="顶">顶</a>
+                        <div class="num _j_up_num topvote12655354">${(vo.thumbsupnum)!0}</div>
                     </div>
                     <div class="person" data-cs-t="ginfo_person_operate">
                         <a href="javascript:;" target="_blank" class="per_pic"><img width="120" height="120" src="${(detail.author.headImgUrl)!'/images/default.jpg'}"></a>
@@ -107,14 +220,17 @@
                         </a>
                         <div class="vc_time">
                             <span class="time">${detail.createTime?string("yyyy-MM-dd HH:mm:ss")}</span>
-                            <span><i class="ico_view"></i>${detail.viewnum!}/${detail.starnum!}</span>
+                            <span><i class="ico_view"></i>${vo.viewnum!}/${vo.replynum!}</span>
                         </div>
 
                     </div>
 
                     <div class="bar_share _j_share_father _j_top_share_group">
                         <div class="bs_collect ">
-                            <a href="javascript:void(0);" rel="nofollow" title="收藏" class="bs_btn _j_do_fav" data-ctime="2019-05-07 21:16:29"><i></i><span>${detail.starnum!}</span><strong>收藏</strong></a>
+                            <a href="javascript:void(0);" title="收藏" class="bs_btn btn-collect" data-tid="${detail.id!}"><i
+                                        class="collect_icon i02 ${(isFavor?string('on-i02',''))!}" data-uid="53383161"></i>
+                                <em class="favorite_num ">${(vo.favornum)!0}</em>
+                            </a>
                         </div>
                         <div class="bs_share">
                             <a href="javascript:void(0);" rel="nofollow" title="分享" class="bs_btn"><i></i><span>${detail.sharenum!}</span><strong>分享</strong></a>

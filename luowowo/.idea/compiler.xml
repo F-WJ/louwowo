@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="trip-article-api" />
         <module name="trip-cache-api" />
         <module name="trip-article-server" />
         <module name="trip-comment-server" />
-        <module name="trip-member-api" />
         <module name="trip-website" />
-        <module name="trip-article-api" />
+        <module name="trip-member-api" />
         <module name="trip-comment-api" />
         <module name="trip-common" />
         <module name="trip-member-server" />
