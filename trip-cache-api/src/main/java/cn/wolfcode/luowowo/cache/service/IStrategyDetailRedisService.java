@@ -24,4 +24,10 @@ public interface IStrategyDetailRedisService {
     List<StrategyStatisVO> getAllStatisVos();
 
 
+    List<StrategyStatisVO> getAbroadCdsTop10();
+
+    List<StrategyStatisVO> getunAbroadCdsTop10();
+
+
+    List<StrategyStatisVO> gethotCdsTop10();
 }

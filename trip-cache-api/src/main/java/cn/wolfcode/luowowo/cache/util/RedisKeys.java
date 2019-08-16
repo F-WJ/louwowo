@@ -13,7 +13,11 @@ public enum  RedisKeys {
     THUMBSUPNUM_USERINFO_ID("thumbsupnum_userinfo_id"),
     TRAVEL_DETAIL_VO("travel_detail_vo"),
     FAVORNUM_TRAVEL_USERINFO_ID("favornum_travel_userinfo_id"),
-    THUMBSUPNUM_TRAVEL_USERINFO_ID("thumbsupnum_travel_userinfo_id");
+    THUMBSUPNUM_TRAVEL_USERINFO_ID("thumbsupnum_travel_userinfo_id"),
+    ABROADCDS_TOP10_DETAIL_ID("abroadCds_top10_detail_id"),
+    UNABROADCDS_TOP10_DETAIL_ID("unabroadCds_top10_detail_id"),
+    HOTCDS_TOP10_DETAIL_ID("hotCds_top10_detail_id");
+
 
 
 //    Login_Token_UserInfo("Login_Token_UserInfo");

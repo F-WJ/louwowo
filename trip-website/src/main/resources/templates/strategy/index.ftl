@@ -38,6 +38,7 @@
                         </div>
                         <div class="nav-panel rank-panel">
                             <ol>
+                                <#if abroadCds??>
                                 <#list abroadCds as d>
                                     <li class="top3">
                                         <em class="rank-num">${d_index + 1}</em>
@@ -47,6 +48,7 @@
                                         <a href="/strategy/detail?id=${d.strategyId}" target="_blank">${d.title!}</a>
                                     </li>
                                 </#list>
+                                </#if>
                             </ol>
                         </div>
                     </div>
@@ -57,6 +59,7 @@
                         </div>
                         <div class="nav-panel rank-panel">
                             <ol>
+                                <#if unabroadCds??>
                                 <#list unabroadCds as d>
                                     <li class="top3">
                                         <em class="rank-num">${d_index + 1}</em>
@@ -66,6 +69,7 @@
                                         <a href="/strategy/detail?id=${d.strategyId}" target="_blank">${d.title!}</a>
                                     </li>
                                 </#list>
+                                </#if>
                             </ol>
                         </div>
                     </div>
@@ -76,6 +80,7 @@
                         </div>
                         <div class="nav-panel rank-panel">
                             <ol>
+                                <#if hotCds??>
                                 <#list hotCds as d>
                                     <li class="top3">
                                         <em class="rank-num">${d_index + 1}</em>
@@ -85,6 +90,7 @@
                                         <a href="/strategy/detail?id=${d.strategyId}" target="_blank">${d.title!}</a>
                                     </li>
                                 </#list>
+                                </#if>
                             </ol>
                         </div>
                     </div>
@@ -95,9 +101,11 @@
                         </div>
                         <div class="nav-panel category-panel">
 
+                            <#if themeCds??>
                            <#list themeCds as tc >
 
                             <dl class="clearfix">
+
                                 <dt>${(tc.theme.name)!}</dt>
                                 <#list tc.dests as d>
                                     <dd><a href="/strategy/list?destId=${(d.id)!}">${(d.name)!}</a></dd>
@@ -105,6 +113,7 @@
                             </dl>
 
                             </#list>
+                            </#if>
 
                         </div>
                     </div>
@@ -159,6 +168,7 @@
             <div class="slide">
                 <ul id="slide_box">
 
+                    <#if commends??>
                     <#list commends as c>
                         <li>
                             <a href="/strategy/detail?id=${(c.strategyId)!}">
@@ -166,12 +176,15 @@
                             </a>
                         </li>
                     </#list>
+                    </#if>
 
                 </ul>
                 <ol id="thumb_box">
+                    <#if commends??>
                     <#list commends as c>
                         <li  data-value="${c_index}" class="${(c_index == 0)?string('on', '')}"></li>
                     </#list>
+                    </#if>
                 </ol>
             </div>
         </div>

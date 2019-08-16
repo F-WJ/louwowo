@@ -1,15 +1,14 @@
 package cn.wolfcode.luowowo.website.controller;
 
 
-import cn.wolfcode.luowowo.article.domain.Destination;
-import cn.wolfcode.luowowo.article.domain.StrategyContent;
-import cn.wolfcode.luowowo.article.domain.StrategyDetail;
-import cn.wolfcode.luowowo.article.domain.StrategyTag;
+import cn.wolfcode.luowowo.article.domain.*;
 import cn.wolfcode.luowowo.article.query.StrategyQuery;
 import cn.wolfcode.luowowo.article.service.IDestinationService;
+import cn.wolfcode.luowowo.article.service.IStrategyCommendService;
 import cn.wolfcode.luowowo.article.service.IStrategyDetailService;
 import cn.wolfcode.luowowo.article.service.IStrategyTagService;
 import cn.wolfcode.luowowo.cache.service.IStrategyDetailRedisService;
+import cn.wolfcode.luowowo.cache.util.RedisKeys;
 import cn.wolfcode.luowowo.cache.vo.StrategyStatisVO;
 import cn.wolfcode.luowowo.comment.domain.StrategyComment;
 import cn.wolfcode.luowowo.comment.query.StrategyCommentQuery;
@@ -48,6 +47,9 @@ public class StrategyController {
 
     @Reference
     private IStrategyDetailRedisService strategyDetailRedisService;
+
+    @Reference
+    private IStrategyCommendService strategyCommendService;
 
 
     //顶数（点赞）
@@ -150,6 +152,29 @@ public class StrategyController {
 
     @RequestMapping("")
     public String index(Model model){
+
+        //commends 回显排名前5个的攻略信息（图片, id）
+        List<StrategyCommend> strategyCommends = strategyCommendService.queryCommendTop5();
+        model.addAttribute("commends", strategyCommends);
+
+        //abroadCds 海外攻略推荐排行（redis版）
+        List<StrategyStatisVO> abroadCds = strategyDetailRedisService.getAbroadCdsTop10();
+        model.addAttribute("abroadCds", abroadCds);
+
+        //unabroadCds 国内攻略推荐排行（redis版）
+        List<StrategyStatisVO> unabroadCds = strategyDetailRedisService.getunAbroadCdsTop10();
+        model.addAttribute("unabroadCds", unabroadCds);
+
+        //hotCds热门攻略排行（redis版）
+        List<StrategyStatisVO> hotCds = strategyDetailRedisService.gethotCdsTop10();
+
+//        List<StrategyStatisVO> cds =  strategyDetailRedisService.getCdsTop10()
+
+
+        model.addAttribute("hotCds", hotCds);
+
+
+
 
         return "/strategy/index";
     }

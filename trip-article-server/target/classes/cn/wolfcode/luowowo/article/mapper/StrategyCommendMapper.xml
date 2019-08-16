@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wolfcode.luowowo.article.mapper.StrategyCommendMapper" >
+  <resultMap id="BaseResultMap" type="cn.wolfcode.luowowo.article.domain.StrategyCommend" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="detail_id" property="strategyId" jdbcType="BIGINT" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="subTitle" property="subTitle" jdbcType="VARCHAR" />
+    <result column="coverUrl" property="coverUrl" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="sequence" property="sequence" jdbcType="INTEGER" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from strategy_commend
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.wolfcode.luowowo.article.domain.StrategyCommend" useGeneratedKeys="true" keyProperty="id" >
+    insert into strategy_commend (detail_id, title, subTitle, 
+      coverUrl, state, sequence
+      )
+    values (#{strategyId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{subTitle,jdbcType=VARCHAR},
+      #{coverUrl,jdbcType=VARCHAR}, #{state,jdbcType=INTEGER}, #{sequence,jdbcType=INTEGER}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.wolfcode.luowowo.article.domain.StrategyCommend" >
+    update strategy_commend
+    set detail_id = #{strategyId,jdbcType=BIGINT},
+      title = #{title,jdbcType=VARCHAR},
+      subTitle = #{subTitle,jdbcType=VARCHAR},
+      coverUrl = #{coverUrl,jdbcType=VARCHAR},
+      state = #{state,jdbcType=INTEGER},
+      sequence = #{sequence,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, detail_id, title, subTitle, coverUrl, state, sequence
+    from strategy_commend
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, detail_id, title, subTitle, coverUrl, state, sequence
+    from strategy_commend
+  </select>
+
+  <select id="selectForList" resultMap="BaseResultMap" >
+    select id, detail_id, title, subTitle, coverUrl, state, sequence
+    from strategy_commend
+  </select>
+
+  <select id="selectCommendTop5" resultMap="BaseResultMap" >
+    select id, detail_id, title, subTitle, coverUrl, state, sequence
+    from strategy_commend where  state = 0 order by sequence DESC
+    limit 0, 5
+  </select>
+</mapper>

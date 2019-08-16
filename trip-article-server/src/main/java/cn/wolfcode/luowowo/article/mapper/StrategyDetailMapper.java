@@ -36,5 +36,5 @@ public interface StrategyDetailMapper {
 
     void updateCommentNumById(Long detailId);
 
-    void updateStatisData(@Param("vo") newStrategyStatisVO vo);
+    void updateStatisData(newStrategyStatisVO vo);
 }

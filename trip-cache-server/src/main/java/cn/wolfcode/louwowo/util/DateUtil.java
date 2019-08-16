@@ -33,7 +33,7 @@ public abstract class DateUtil {
         }
         Calendar c = Calendar.getInstance();
         c.setTime(date);
-        c.set(Calendar.HOUR,23);
+        c.set(Calendar.HOUR_OF_DAY,23);
         c.set(Calendar.MINUTE,59);
         c.set(Calendar.SECOND,59);
         return c.getTime();

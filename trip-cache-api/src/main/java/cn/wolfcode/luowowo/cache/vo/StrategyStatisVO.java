@@ -15,6 +15,7 @@ import java.io.Serializable;
 @Setter
 public class StrategyStatisVO implements Serializable {
 
+    //排行榜所需数据
     private boolean isabroad;
     private Long destId;
     private String destName;

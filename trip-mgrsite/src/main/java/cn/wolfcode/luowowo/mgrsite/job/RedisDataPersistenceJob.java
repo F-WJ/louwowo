@@ -41,23 +41,23 @@ public class RedisDataPersistenceJob {
         System.out.println("-------------------开始同步-----------------");
 
         //获取redis所有 vo数据
-//        List<StrategyStatisVO> vos = strategyDetailRedisService.getAllStatisVos();
-//
-//        for (StrategyStatisVO vo : vos) {
-//
-//            //更新所有数据
-//            if(vo.getStrategyId() != 0) {
-//                newStrategyStatisVO v = new newStrategyStatisVO();
-//                v.setFavornum(vo.getFavornum());
-//                v.setReplynum(vo.getReplynum());
-//                v.setSharenum(vo.getSharenum());
-//                v.setStrategyId(vo.getStrategyId());
-//                v.setThumbsupnum(vo.getThumbsupnum());
-//                v.setViewnum(vo.getViewnum());
-//                strategyDetailService.updateStatisData(v);
-//            }
-//
-//        }
+        List<StrategyStatisVO> vos = strategyDetailRedisService.getAllStatisVos();
+
+        for (StrategyStatisVO vo : vos) {
+
+            //更新所有数据
+            if(vo.getStrategyId() != 0) {
+                newStrategyStatisVO v = new newStrategyStatisVO();
+                v.setFavornum(vo.getFavornum());
+                v.setReplynum(vo.getReplynum());
+                v.setSharenum(vo.getSharenum());
+                v.setStrategyId(vo.getStrategyId());
+                v.setThumbsupnum(vo.getThumbsupnum());
+                v.setViewnum(vo.getViewnum());
+                strategyDetailService.updateStatisData(v);
+            }
+
+        }
 
         System.out.println("-------------------同步结束-----------------");
     }

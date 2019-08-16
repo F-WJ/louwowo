@@ -220,12 +220,12 @@
 
   <update id="updateStatisData">
     update strategy_detail set
-    viewnum = #{vo.viewnum},
-    replynum = #{vo.replynum},
-    favornum = #{vo.favornum},
-    sharenum = #{vo.sharenum},
-                               thumbsupnum = #{vo,thumbsupnum}
-    where id = #{vo.strategyId}
+    viewnum = #{viewnum},
+    replynum = #{replynum},
+    favornum = #{favornum},
+    sharenum = #{sharenum},
+    thumbsupnum = #{thumbsupnum}
+    where id = #{strategyId}
   </update>
     <update id="updateCommentNumById">
       update strategy_detail set   replynum = replynum + 1

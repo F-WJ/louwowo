@@ -221,6 +221,125 @@ public class StrategyDetailRedisServiceImpl implements IStrategyDetailRedisServi
         return list;
     }
 
+    /**
+     * 海外攻略排行榜top10
+     * @return
+     */
+    @Override
+    public List<StrategyStatisVO> getAbroadCdsTop10() {
+        //查询所有海外攻略信息
+        Set<String> keys = redisTemplate.keys(RedisKeys.STRATEGY_DETAIL_VO.getPrefix() + ":*");
+        List<StrategyStatisVO> list = new ArrayList<>();
+        if(keys != null) {
+            //获取海外的数据
+            for (String key : keys) {
+                String detailStr = redisTemplate.opsForValue().get(key);
+                StrategyStatisVO strategyStatisVO = JSON.parseObject(detailStr, StrategyStatisVO.class);
+                StrategyDetail strategyDetail = strategyDetailService.get(strategyStatisVO.getStrategyId());
+                boolean isabroad = strategyDetail.isIsabroad();
+                if(isabroad){
+                    //保存到zset上(做排行榜)(点赞数+收藏数)
+                    double score = strategyStatisVO.getThumbsupnum() + strategyStatisVO.getFavornum();
+                    redisTemplate.opsForZSet().add(RedisKeys.ABROADCDS_TOP10_DETAIL_ID.getPrefix(), key, score);
+                }
+            }
+
+            //获取zset上值
+            Set<String> ranges = redisTemplate.opsForZSet().reverseRange(RedisKeys.ABROADCDS_TOP10_DETAIL_ID.getPrefix(), 0, 9);
+            for (String range : ranges) {
+                String valueStr = redisTemplate.opsForValue().get(range);
+                StrategyStatisVO vo = JSON.parseObject(valueStr, StrategyStatisVO.class);
+                StrategyDetail strategyDetail = strategyDetailService.get(vo.getStrategyId());
+
+                vo.setDestId(strategyDetail.getDest().getId());
+                vo.setDestName(strategyDetail.getDest().getName());
+                vo.setTitle(strategyDetail.getTitle());
+                list.add(vo);
+            }
+
+        }
+        return list;
+    }
+
+    /**
+     * 国内攻略排行榜top10
+     * @return
+     */
+    @Override
+    public List<StrategyStatisVO> getunAbroadCdsTop10() {
+        //查询所有攻略信息
+        Set<String> keys = redisTemplate.keys(RedisKeys.STRATEGY_DETAIL_VO.getPrefix() + ":*");
+        List<StrategyStatisVO> list = new ArrayList<>();
+        if(keys != null) {
+            //获取海外的数据
+            for (String key : keys) {
+                String detailStr = redisTemplate.opsForValue().get(key);
+                StrategyStatisVO strategyStatisVO = JSON.parseObject(detailStr, StrategyStatisVO.class);
+                StrategyDetail strategyDetail = strategyDetailService.get(strategyStatisVO.getStrategyId());
+                boolean isabroad = strategyDetail.isIsabroad();
+                if(!isabroad){
+                    //保存到zset上(做排行榜)(点赞数+收藏数)
+                    double score = strategyStatisVO.getThumbsupnum() + strategyStatisVO.getFavornum();
+                    redisTemplate.opsForZSet().add(RedisKeys.UNABROADCDS_TOP10_DETAIL_ID.getPrefix(), key, score);
+                }
+            }
+
+            //获取zset上值（排序）
+            Set<String> ranges = redisTemplate.opsForZSet().reverseRange(RedisKeys.UNABROADCDS_TOP10_DETAIL_ID.getPrefix(), 0, 9);
+            for (String range : ranges) {
+                String valueStr = redisTemplate.opsForValue().get(range);
+                StrategyStatisVO vo = JSON.parseObject(valueStr, StrategyStatisVO.class);
+                StrategyDetail strategyDetail = strategyDetailService.get(vo.getStrategyId());
+
+                vo.setDestId(strategyDetail.getDest().getId());
+                vo.setDestName(strategyDetail.getDest().getName());
+                vo.setTitle(strategyDetail.getTitle());
+                list.add(vo);
+            }
+
+        }
+        return list;
+    }
+
+
+    /**
+     * 热门攻略top10     HOTCDS_TOP10_DETAIL_ID
+     * @return
+     */
+    @Override
+    public List<StrategyStatisVO> gethotCdsTop10() {
+        //查询所有攻略信息
+        Set<String> keys = redisTemplate.keys(RedisKeys.STRATEGY_DETAIL_VO.getPrefix() + ":*");
+        List<StrategyStatisVO> list = new ArrayList<>();
+        if(keys != null) {
+            //获取海外的数据
+            for (String key : keys) {
+                String detailStr = redisTemplate.opsForValue().get(key);
+                StrategyStatisVO strategyStatisVO = JSON.parseObject(detailStr, StrategyStatisVO.class);
+                StrategyDetail strategyDetail = strategyDetailService.get(strategyStatisVO.getStrategyId());
+                //保存到zset上(做排行榜)(浏览数+评论数)
+                double score = strategyStatisVO.getViewnum() + strategyStatisVO.getReplynum();
+                redisTemplate.opsForZSet().add(RedisKeys.HOTCDS_TOP10_DETAIL_ID.getPrefix(), key, score);
+
+            }
+
+            //获取zset上值
+            Set<String> ranges = redisTemplate.opsForZSet().reverseRange(RedisKeys.HOTCDS_TOP10_DETAIL_ID.getPrefix(), 0, 9);
+            for (String range : ranges) {
+                String valueStr = redisTemplate.opsForValue().get(range);
+                StrategyStatisVO vo = JSON.parseObject(valueStr, StrategyStatisVO.class);
+                StrategyDetail strategyDetail = strategyDetailService.get(vo.getStrategyId());
+
+                vo.setDestId(strategyDetail.getDest().getId());
+                vo.setDestName(strategyDetail.getDest().getName());
+                vo.setTitle(strategyDetail.getTitle());
+                list.add(vo);
+            }
+
+        }
+        return list;
+    }
+
     private void updateFavornumByKey(Long sid, Long uid, AjaxResult ajaxResult, StrategyStatisVO vo) {
         Boolean hasKey = redisTemplate.hasKey(RedisKeys.FAVORNUM_USERINFO_ID.join(sid.toString(),uid.toString()));
         if(!hasKey){
