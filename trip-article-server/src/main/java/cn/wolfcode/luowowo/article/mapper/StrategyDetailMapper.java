@@ -3,6 +3,7 @@ package cn.wolfcode.luowowo.article.mapper;
 import cn.wolfcode.luowowo.article.domain.StrategyDetail;
 import cn.wolfcode.luowowo.article.query.StrategyDetailQuery;
 import cn.wolfcode.luowowo.article.query.StrategyQuery;
+import cn.wolfcode.luowowo.article.service.vo.newStrategyStatisVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -34,4 +35,6 @@ public interface StrategyDetailMapper {
     StrategyDetail getByCatalogId(Long catalogId);
 
     void updateCommentNumById(Long detailId);
+
+    void updateStatisData(@Param("vo") newStrategyStatisVO vo);
 }

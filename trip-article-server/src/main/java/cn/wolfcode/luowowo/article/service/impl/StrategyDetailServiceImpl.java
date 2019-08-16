@@ -9,6 +9,7 @@ import cn.wolfcode.luowowo.article.query.StrategyDetailQuery;
 import cn.wolfcode.luowowo.article.query.StrategyQuery;
 import cn.wolfcode.luowowo.article.service.IDestinationService;
 import cn.wolfcode.luowowo.article.service.IStrategyDetailService;
+import cn.wolfcode.luowowo.article.service.vo.newStrategyStatisVO;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -147,8 +148,10 @@ public class StrategyDetailServiceImpl implements IStrategyDetailService {
 
     }
 
-
-
+    @Override
+    public void updateStatisData(newStrategyStatisVO vo) {
+        strategyDetailMapper.updateStatisData(vo);
+    }
 
 
 }

@@ -8,6 +8,8 @@ import cn.wolfcode.luowowo.article.domain.StrategyContent;
 import cn.wolfcode.luowowo.article.domain.StrategyDetail;
 import cn.wolfcode.luowowo.article.query.StrategyDetailQuery;
 import cn.wolfcode.luowowo.article.query.StrategyQuery;
+
+import cn.wolfcode.luowowo.article.service.vo.newStrategyStatisVO;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
@@ -73,4 +75,7 @@ public interface IStrategyDetailService {
 
 
     void updateCommentNumById(Long detailId);
+
+
+    void updateStatisData(newStrategyStatisVO vo);
 }

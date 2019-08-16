@@ -1,8 +1,10 @@
 package cn.wolfcode.luowowo.cache.service;
 
-import cn.wolfcode.luowowo.article.domain.StrategyDetail;
+
 import cn.wolfcode.luowowo.cache.vo.StrategyStatisVO;
 import cn.wolfcode.luowowo.common.util.AjaxResult;
+
+import java.util.List;
 
 public interface IStrategyDetailRedisService {
     void initData(StrategyStatisVO vo);
@@ -18,4 +20,8 @@ public interface IStrategyDetailRedisService {
     boolean isFavorBy(Long sid, Long uid);
 
     AjaxResult saveThumbsupnum(Long sid, Long id);
+
+    List<StrategyStatisVO> getAllStatisVos();
+
+
 }

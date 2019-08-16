@@ -13,7 +13,10 @@ import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 
@@ -197,6 +200,25 @@ public class StrategyDetailRedisServiceImpl implements IStrategyDetailRedisServi
 
 
         }
+    }
+
+    /**
+     * 获取所有redis上的数据
+     * @return
+     */
+    @Override
+    public List<StrategyStatisVO> getAllStatisVos() {
+        //根据指定key规则获取key集合
+        Set<String> keys = redisTemplate.keys(RedisKeys.STRATEGY_DETAIL_VO.getPrefix() + ":*");
+        List<StrategyStatisVO> list = new ArrayList<>();
+
+
+        for (String key : keys) {
+            String detailStr = redisTemplate.opsForValue().get(key);
+            list.add(JSON.parseObject(detailStr, StrategyStatisVO.class));
+        }
+
+        return list;
     }
 
     private void updateFavornumByKey(Long sid, Long uid, AjaxResult ajaxResult, StrategyStatisVO vo) {

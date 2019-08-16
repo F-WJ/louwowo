@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71558685-f450-42b6-8f28-d8201bdb5f25" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/vo/newStrategyStatisVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/job/RedisDataPersistenceJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-cache-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-cache-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/util/RedisKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/util/RedisKeys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-cache-api/target/classes/cn/wolfcode/luowowo/cache/util/RedisKeys.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-cache-api/target/classes/cn/wolfcode/luowowo/cache/util/RedisKeys.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AjaxResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AjaxResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-common/target/classes/cn/wolfcode/luowowo/common/util/AjaxResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-common/target/classes/cn/wolfcode/luowowo/common/util/AjaxResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/StrategyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/StrategyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/controller/StrategyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/controller/StrategyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/controller/TravelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/target/classes/cn/wolfcode/luowowo/website/controller/TravelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trip-website/target/classes/templates/travel/detail.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-website/target/classes/templates/travel/detail.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/service/IStrategyDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-api/target/classes/cn/wolfcode/luowowo/article/service/IStrategyDetailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/META-INF/trip-article-server.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-article-server/target/classes/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-cache-api/target/classes/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-cache-api/target/classes/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/StrategyDetailRedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/StrategyDetailRedisServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-cache-server/target/classes/cn/wolfcode/louwowo/cache/service/impl/StrategyDetailRedisServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-cache-server/target/classes/cn/wolfcode/louwowo/cache/service/impl/StrategyDetailRedisServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trip-mgrsite/target/classes/cn/wolfcode/luowowo/MgrSite.class" beforeDir="false" afterPath="$PROJECT_DIR$/../trip-mgrsite/target/classes/cn/wolfcode/luowowo/MgrSite.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,19 +51,28 @@
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl">
+              <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/vo/StrategyStatisVO.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="4686">
-                    <caret line="213" column="30" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
+                  <state relative-caret-position="418">
+                    <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="jar://E:/Java/jdk1.8.0_45/src.zip!/java/lang/Long.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="4224">
+                    <caret line="216" column="33" selection-start-line="216" selection-start-column="33" selection-end-line="216" selection-end-column="33" />
                   </state>
                 </provider>
               </entry>
             </file>
             <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/detail.ftl">
+              <entry file="jar://E:/Java/jdk1.8.0_45/src.zip!/java/math/BigInteger.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="438">
-                    <caret line="245" column="26" selection-start-line="245" selection-start-column="26" selection-end-line="245" selection-end-column="26" />
+                  <state relative-caret-position="251">
+                    <caret line="1180" column="35" selection-start-line="1180" selection-start-column="35" selection-end-line="1180" selection-end-column="35" />
                   </state>
                 </provider>
               </entry>
@@ -70,19 +85,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/StrategyController.java">
+        <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2552">
-              <caret line="143" column="62" selection-start-line="143" selection-start-column="62" selection-end-line="143" selection-end-column="62" />
+            <state relative-caret-position="533">
+              <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.java">
+        <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="4972">
+              <caret line="226" column="31" selection-start-line="226" selection-start-column="31" selection-end-line="226" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/vo/newStrategyStatisVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -90,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/StrategyDetailRedisServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3234">
-              <caret line="161" column="76" selection-start-line="161" selection-start-column="56" selection-end-line="161" selection-end-column="76" />
+            <state relative-caret-position="4422">
+              <caret line="218" column="9" selection-start-line="218" selection-start-column="9" selection-end-line="219" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,28 +136,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/detail.ftl">
+        <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/util/RedisKeys.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1804">
-              <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="176">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/TravelDetailRedisServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="440">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,42 +157,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.6.RELEASE/spring-data-redis-2.1.6.RELEASE-sources.jar!/org/springframework/data/redis/core/StringRedisTemplate.java">
+        <entry file="file://$PROJECT_DIR$/../trip-cache-api/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/util/DateUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.6.RELEASE/spring-data-redis-2.1.6.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14784">
-              <caret line="764" selection-start-line="764" selection-end-line="764" />
+            <state relative-caret-position="814">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -223,10 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/util/AjaxResult.java" />
-        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/controller/travelController.java" />
-        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/util/JsonResult.java" />
-        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyCatalogService.java" />
         <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/query/DestinationQuery.java" />
         <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/DestinationController.java" />
         <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/TravelMapper.xml" />
@@ -240,10 +231,6 @@
         <option value="$PROJECT_DIR$/../trip-website/pom.xml" />
         <option value="$PROJECT_DIR$/../trip-comment-api/src/main/java/cn/wolfcode/luowowo/comment/repository/IStrategyCommentRepository.java" />
         <option value="$PROJECT_DIR$/../trip-comment-server/src/main/java/cn/wolfcode/luowowo/comment/repository/IStrategyCommentRepository.java" />
-        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" />
-        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" />
         <option value="$PROJECT_DIR$/../trip-comment-api/src/main/java/cn/wolfcode/luowowo/comment/domain/StrategyComment.java" />
         <option value="$PROJECT_DIR$/../trip-comment-api/src/main/java/cn/wolfcode/luowowo/comment/query/StrategyCommentQuery.java" />
         <option value="$PROJECT_DIR$/../trip-comment-api/src/main/java/cn/wolfcode/luowowo/comment/query/StrategyCommendQuery.java" />
@@ -261,12 +248,9 @@
         <option value="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/list.ftl" />
         <option value="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/vo/StrategyStatisVO.java" />
         <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/listener/RedisDataInitListener.java" />
-        <option value="$PROJECT_DIR$/../trip-cache-api/pom.xml" />
         <option value="$PROJECT_DIR$/../trip-common/src/main/java/cn/wolfcode/luowowo/common/util/AjaxResult.java" />
-        <option value="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.java" />
         <option value="$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/util/DateUtil.java" />
         <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/StrategyController.java" />
-        <option value="$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/StrategyDetailRedisServiceImpl.java" />
         <option value="$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/detail.ftl" />
         <option value="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/vo/TravelStatisVO.java" />
         <option value="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/ITravelDetailRedisService.java" />
@@ -274,6 +258,17 @@
         <option value="$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java" />
         <option value="$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/TravelDetailRedisServiceImpl.java" />
         <option value="$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java" />
+        <option value="$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.java" />
+        <option value="$PROJECT_DIR$/../trip-cache-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/vo/StrategyStatisVO.java" />
+        <option value="$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java" />
+        <option value="$PROJECT_DIR$/../trip-article-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/StrategyDetailRedisServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java" />
+        <option value="$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml" />
+        <option value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/job/RedisDataPersistenceJob.java" />
       </list>
     </option>
   </component>
@@ -353,8 +348,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="387" />
-    <option name="y" value="66" />
+    <option name="x" value="92" />
+    <option name="y" value="25" />
     <option name="width" value="1527" />
     <option name="height" value="940" />
   </component>
@@ -364,12 +359,108 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
               <item name="luowowo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-article-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
@@ -466,6 +557,55 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="louwowo" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="luowowo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="luowowo" type="462c0819:PsiDirectoryNode" />
+              <item name="mgrsite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trip-mgrsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="luowowo" type="462c0819:PsiDirectoryNode" />
+              <item name="mgrsite" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="luowowo" type="b2602c69:ProjectViewProjectNode" />
@@ -632,7 +772,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -646,28 +785,28 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../trip-member-server/src/main/java/cn/wolfcode/luowowo/member" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../trip-website/src/main/resources/static/js/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\openprojects\project_luowowo\trip-website\src\main\resources\static\js\plugins" />
-      <recent name="D:\openprojects\project_luowowo\trip-comment-api\src\main\java\cn\wolfcode\luowowo\comment\query" />
-      <recent name="D:\openprojects\project_luowowo\trip-comment-server\src\main\resources" />
-      <recent name="D:\openprojects\project_luowowo\trip-comment-api\src\main\java\cn\wolfcode\luowowo\comment\domain" />
-      <recent name="D:\openprojects\project_luowowo\trip-comment-api\src\main\java\cn\wolfcode\luowowo\comment\repository" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\openprojects\project_luowowo\trip-website\src\main\resources\templates\index" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.wolfcode.luowowo.article.service.vo" />
       <recent name="cn.wolfcode.luowowo.cache.vo" />
       <recent name="cn.wolfcode.luowowo.cache.service" />
       <recent name="cn.wolfcode.louwowo.cache.service.impl" />
       <recent name="cn.wolfcode.luowowo.comment.service.impl" />
-      <recent name="cn.wolfcode.luowowo.comment.repository" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\openprojects\project_luowowo\trip-website\src\main\resources\templates\index" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\openprojects\project_luowowo\trip-mgrsite\src\main\java\cn\wolfcode\luowowo\mgrsite" />
+      <recent name="D:\openprojects\project_luowowo\trip-website\src\main\resources\static\js\plugins" />
+      <recent name="D:\openprojects\project_luowowo\trip-comment-api\src\main\java\cn\wolfcode\luowowo\comment\query" />
+      <recent name="D:\openprojects\project_luowowo\trip-comment-server\src\main\resources" />
+      <recent name="D:\openprojects\project_luowowo\trip-comment-api\src\main\java\cn\wolfcode\luowowo\comment\domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -788,18 +927,20 @@
       <workItem from="1565804650700" duration="19644000" />
       <workItem from="1565848478130" duration="3777000" />
       <workItem from="1565858980258" duration="1510000" />
-      <workItem from="1565861282197" duration="454000" />
+      <workItem from="1565861282197" duration="1747000" />
+      <workItem from="1565907627198" duration="6668000" />
+      <workItem from="1565916193895" duration="596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254857000" />
+    <option name="totallyTimeSpent" value="263414000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="387" y="66" width="1527" height="940" extended-state="0" />
+    <frame x="92" y="25" width="1527" height="940" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4970874" visible="true" weight="0.23653714" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4970874" visible="true" weight="0.24335378" />
       <window_info id="Structure" order="1" sideWeight="0.5009709" side_tool="true" weight="0.2673016" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.50291264" side_tool="true" weight="0.2704762" />
@@ -811,7 +952,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32781458" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32636657" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49968255" weight="0.53846157" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49968255" weight="0.49007446" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -819,7 +960,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32668883" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32630274" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -879,85 +1020,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../trip-comment-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-comment-api/src/main/java/cn/wolfcode/luowowo/comment/service/IStrategyCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-comment-api/src/main/java/cn/wolfcode/luowowo/comment/service/ITravelCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-comment-server/src/main/java/cn/wolfcode/luowowo/comment/service/impl/StrategyCommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-comment-server/src/main/java/cn/wolfcode/luowowo/comment/service/impl/TravelCommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/index/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/commentTpl.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" selection-start-column="34" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/static/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/commentTpl.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../trip-comment-api/src/main/java/cn/wolfcode/luowowo/comment/domain/TravelComment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1004,34 +1070,6 @@
     <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/index.ftl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
-          <folding>
-            <element signature="e#3630#3631#0" expanded="true" />
-            <element signature="e#3685#3686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IUserInfoRedisService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1039,23 +1077,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="106" column="2" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../trip-website/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-cache-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/listener/RedisDataInitListener.java">
@@ -1127,13 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/vo/StrategyStatisVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/static/js/ueditor/umeditor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1165,17 +1182,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/util/RedisKeys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.6.RELEASE/spring-data-redis-2.1.6.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisOperations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="162" column="12" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4686">
+          <caret line="213" column="30" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1186,20 +1203,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.java">
+    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/detail.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/StrategyDetailRedisServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3234">
-          <caret line="161" column="76" selection-start-line="161" selection-start-column="56" selection-end-line="161" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1804">
+          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1246,24 +1253,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/travel/detail.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4686">
-          <caret line="213" column="30" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trip-website/src/main/resources/templates/strategy/detail.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1804">
-          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../trip-website/src/main/java/cn/wolfcode/luowowo/website/controller/TravelController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/MgrSite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/cn.wolfcode.luowowo.mgrsite.job.RedisDataPersistenceJob">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>cn.wolfcode.luowowo.mgrsite.job.RedisDataPersistenceJob</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.stereotype.Component</node>
+            <node x="" y="">cn.wolfcode.luowowo.mgrsite.job.RedisDataPersistenceJob</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="103.0" y="57.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-cache-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4972">
+          <caret line="226" column="31" selection-start-line="226" selection-start-column="31" selection-end-line="226" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/vo/newStrategyStatisVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-cache-server/src/main/java/cn/wolfcode/louwowo/cache/service/impl/StrategyDetailRedisServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4422">
+          <caret line="218" column="9" selection-start-line="218" selection-start-column="9" selection-end-line="219" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/util/RedisKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/service/IStrategyDetailRedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-cache-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-cache-api/src/main/java/cn/wolfcode/luowowo/cache/vo/StrategyStatisVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_45/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4224">
+          <caret line="216" column="33" selection-start-line="216" selection-start-column="33" selection-end-line="216" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_45/src.zip!/java/math/BigInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="1180" column="35" selection-start-line="1180" selection-start-column="35" selection-end-line="1180" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-api/src/main/java/cn/wolfcode/luowowo/article/service/IStrategyDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-mgrsite/src/main/java/cn/wolfcode/luowowo/mgrsite/job/RedisDataPersistenceJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/service/impl/StrategyDetailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../trip-article-server/src/main/java/cn/wolfcode/luowowo/article/mapper/StrategyDetailMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
