@@ -60,15 +60,15 @@
                     if(data.success){
                         $(".favorite_num").html(data.data.favornum);
                         $(".collect_icon").addClass("on-i02")
-                        testInner("收你条毛",true)
+                        testInner("收集成功",true)
                     }else{
                         if(data.code == 102){
                             $(".collect_icon").removeClass("on-i02")
-                            testInner("取消你条毛",true)
+                            testInner("取消成功",true)
                         }else{
                             $(".collect_icon").removeClass("on-i02")
                             $(".favorite_num").html(data.data.favornum);
-                            testInner("取消你条毛",true)
+                            testInner("取消成功",true)
                         }
                     }
                 });
@@ -80,14 +80,13 @@
                 var tid = $(this).data("tid");
                 $.get("/travel/strategyThumbup", {tid:tid}, function (data) {
                     if(data.success){
-                        $(".support_num").html(data.data.thumbsupnum);
-                        popup("顶你个肺啦"); //
+                        popup("操作成功"); //
 
                     }else{
                         if(data.code == 102){
                             popup(data.msg);
                         }else{
-                            testInner("顶过了，扑你条街",true)
+                            testInner("今天顶，明天再来",true)
                         }
 
                     }
@@ -208,7 +207,7 @@
                 <div class="vt_center">
                     <div class="ding _j_ding_father">
                         <a role="button" data-japp="articleding" rel="nofollow" data-iid="12655354"  data-tid="${detail.id!}" data-vote="7" class="up_act" title="顶">顶</a>
-                        <div class="num _j_up_num topvote12655354">${(vo.thumbsupnum)!0}</div>
+                        <div class="num _j_up_num topvote12655354  support_num">${(vo.thumbsupnum)!0}</div>
                     </div>
                     <div class="person" data-cs-t="ginfo_person_operate">
                         <a href="javascript:;" target="_blank" class="per_pic"><img width="120" height="120" src="${(detail.author.headImgUrl)!'/images/default.jpg'}"></a>

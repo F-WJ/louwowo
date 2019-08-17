@@ -90,6 +90,11 @@ public class TravelController {
         travelCommentService.saveOrUpdate(travelComment);
         model.addAttribute("c", travelComment);
         model.addAttribute("floor", floor + 1);
+
+        //使用redis保存评论数
+        TravelStatisVO vo = travelDetailRedisService.saveReplynum(travelComment.getTravelId());
+        model.addAttribute("vo", vo);
+
         return "travel/commentTpl";
 
     }

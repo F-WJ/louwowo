@@ -10,6 +10,7 @@ import cn.wolfcode.luowowo.article.query.StrategyDetailQuery;
 import cn.wolfcode.luowowo.article.query.StrategyQuery;
 
 import cn.wolfcode.luowowo.article.service.vo.newStrategyStatisVO;
+import cn.wolfcode.luowowo.article.service.vo.newTravelStatisVO;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
@@ -78,4 +79,7 @@ public interface IStrategyDetailService {
 
 
     void updateStatisData(newStrategyStatisVO vo);
+
+
+    void updateTravelData(newTravelStatisVO v);
 }

@@ -2,6 +2,7 @@ package cn.wolfcode.luowowo.cache.service;
 
 
 import cn.wolfcode.luowowo.cache.vo.StrategyStatisVO;
+import cn.wolfcode.luowowo.cache.vo.TravelStatisVO;
 import cn.wolfcode.luowowo.common.util.AjaxResult;
 
 import java.util.List;
@@ -30,4 +31,7 @@ public interface IStrategyDetailRedisService {
 
 
     List<StrategyStatisVO> gethotCdsTop10();
+
+    List<TravelStatisVO> getAllTravelStatisVos();
+
 }

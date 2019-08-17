@@ -2,8 +2,10 @@ package cn.wolfcode.luowowo.mgrsite.job;
 
 import cn.wolfcode.luowowo.article.service.IStrategyDetailService;
 import cn.wolfcode.luowowo.article.service.vo.newStrategyStatisVO;
+import cn.wolfcode.luowowo.article.service.vo.newTravelStatisVO;
 import cn.wolfcode.luowowo.cache.service.IStrategyDetailRedisService;
 import cn.wolfcode.luowowo.cache.vo.StrategyStatisVO;
+import cn.wolfcode.luowowo.cache.vo.TravelStatisVO;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -58,6 +60,22 @@ public class RedisDataPersistenceJob {
             }
 
         }
+
+        List<TravelStatisVO> travels = strategyDetailRedisService.getAllTravelStatisVos();
+        for (TravelStatisVO vo : travels) {
+            //更新所有数据
+            if(vo.getTravelId() != 0) {
+                newTravelStatisVO v = new newTravelStatisVO();
+                v.setFavornum(vo.getFavornum());
+                v.setReplynum(vo.getReplynum());
+                v.setSharenum(vo.getSharenum());
+                v.setTravelId(vo.getTravelId());
+                v.setThumbsupnum(vo.getThumbsupnum());
+                v.setViewnum(vo.getViewnum());
+                strategyDetailService.updateTravelData(v);
+            }
+        }
+
 
         System.out.println("-------------------同步结束-----------------");
     }

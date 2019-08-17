@@ -231,4 +231,14 @@
       update strategy_detail set   replynum = replynum + 1
         where id = #{detailId}
     </update>
+  <update id="updateTravelStatisData">
+    update travel set
+                             viewnum = #{viewnum},
+                             replynum = #{replynum},
+                             favornum = #{favornum},
+                             sharenum = #{sharenum},
+                             thumbsupnum = #{thumbsupnum}
+    where id = #{travelId}
+
+  </update>
 </mapper>

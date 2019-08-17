@@ -6,6 +6,7 @@ import cn.wolfcode.luowowo.article.service.IStrategyDetailService;
 import cn.wolfcode.luowowo.cache.service.IStrategyDetailRedisService;
 import cn.wolfcode.luowowo.cache.util.RedisKeys;
 import cn.wolfcode.luowowo.cache.vo.StrategyStatisVO;
+import cn.wolfcode.luowowo.cache.vo.TravelStatisVO;
 import cn.wolfcode.luowowo.common.util.AjaxResult;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
@@ -337,6 +338,26 @@ public class StrategyDetailRedisServiceImpl implements IStrategyDetailRedisServi
             }
 
         }
+        return list;
+    }
+
+
+    /**
+     * 全部游记
+     * @return
+     */
+    @Override
+    public List<TravelStatisVO> getAllTravelStatisVos() {
+        //根据指定key规则获取key集合
+        Set<String> keys = redisTemplate.keys(RedisKeys.TRAVEL_DETAIL_VO.getPrefix() + ":*");
+        List<TravelStatisVO> list = new ArrayList<>();
+
+
+        for (String key : keys) {
+            String detailStr = redisTemplate.opsForValue().get(key);
+            list.add(JSON.parseObject(detailStr, TravelStatisVO.class));
+        }
+
         return list;
     }
 
