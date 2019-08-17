@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="trip-search-server" />
         <module name="trip-cache-api" />
         <module name="trip-article-server" />
         <module name="trip-comment-server" />
@@ -35,6 +36,7 @@
       <module name="trip-member-server" options="-parameters" />
       <module name="trip-mgrsite" options="-parameters" />
       <module name="trip-search-api" options="-parameters" />
+      <module name="trip-search-server" options="-parameters" />
       <module name="trip-website" options="-parameters" />
     </option>
   </component>

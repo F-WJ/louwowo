@@ -13,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/../trip-member-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../trip-mgrsite" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../trip-search-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../trip-search-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../trip-website" charset="UTF-8" />
   </component>
 </project>

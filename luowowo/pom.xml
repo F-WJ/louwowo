@@ -21,6 +21,7 @@
         <module>../trip-mgrsite</module>
         <module>../trip-comment-api</module>
         <module>../trip-comment-server</module>
+        <module>../trip-search-server</module>
     </modules>
 
     <parent>

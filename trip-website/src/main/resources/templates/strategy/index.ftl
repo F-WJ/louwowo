@@ -213,7 +213,7 @@
         </div>
         <div class="gl_wrap">
             <h3>
-                <a href="javascript:;">国外攻略</a>
+                <a href="javascript:;">全球攻略</a>
             </h3>
             <ol>
               <#list abroads as c>

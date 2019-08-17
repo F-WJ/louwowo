@@ -15,6 +15,9 @@ import cn.wolfcode.luowowo.comment.query.StrategyCommentQuery;
 import cn.wolfcode.luowowo.comment.service.IStrategyCommentService;
 import cn.wolfcode.luowowo.common.util.AjaxResult;
 import cn.wolfcode.luowowo.member.domain.UserInfo;
+import cn.wolfcode.luowowo.search.query.SearchQueryObject;
+import cn.wolfcode.luowowo.search.service.IStrategySearchService;
+import cn.wolfcode.luowowo.search.vo.StatisVO;
 import cn.wolfcode.luowowo.website.annotation.UserParam;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.github.pagehelper.PageInfo;
@@ -28,6 +31,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.jws.soap.SOAPBinding;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/strategy")
@@ -50,6 +54,9 @@ public class StrategyController {
 
     @Reference
     private IStrategyCommendService strategyCommendService;
+
+    @Reference
+    private IStrategySearchService strategySearchService;
 
 
     //顶数（点赞）
@@ -167,11 +174,24 @@ public class StrategyController {
 
         //hotCds热门攻略排行（redis版）
         List<StrategyStatisVO> hotCds = strategyDetailRedisService.gethotCdsTop10();
-
-//        List<StrategyStatisVO> cds =  strategyDetailRedisService.getCdsTop10()
-
-
         model.addAttribute("hotCds", hotCds);
+
+        //主题推荐 themeCds
+        List<Map<String, Object>> themeCds = strategySearchService.getThemeCommend();
+        model.addAttribute("themeCds", themeCds);
+
+        //国内攻略 chinas
+        List<StatisVO> chinas = strategySearchService.queryConditionGroup(SearchQueryObject.CONDITION_TYPE_UN_ABROAD);
+        model.addAttribute("chinas", chinas);
+
+        //国外攻略 abroads
+        List<StatisVO> abroads = strategySearchService.queryConditionGroup(SearchQueryObject.CONDITION_TYPE_ABROAD);
+        model.addAttribute("abroads", abroads);
+
+        //主题攻略 themes
+        List<StatisVO> themes = strategySearchService.queryConditionGroup(SearchQueryObject.CONDITION_TYPE_THEME);
+        model.addAttribute("themes", themes);
+
 
 
 

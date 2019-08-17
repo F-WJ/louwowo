@@ -65,6 +65,73 @@ public class DestinationServiceImpl implements IDestinationService {
 
     }
 
+
+    /**
+     * 根据id获取国家
+     * @param id
+     * @return
+     */
+    @Override
+    public Destination getCountry(Long id) {
+        Destination dest = destinationMapper.selectByPrimaryKey(id);
+        if(dest.getParent() == null){
+            return dest;
+        }
+        List<Destination> toasts = this.getToasts(id);
+        if(toasts != null && toasts.size() > 0 ){
+            return toasts.get(0);
+        }
+
+        return null;
+    }
+
+    public boolean isAbroad(Long id) {
+        Destination dest = destinationMapper.selectByPrimaryKey(id);
+        if(dest == null){
+            return  false;
+        }
+        if("中国".equals(dest.getName())){
+            return  false;
+        }
+        if(dest.getParent() != null){
+            if("中国".equals(dest.getParent().getName())){
+                return false;
+            }
+        }else{
+            //如果顶级目的地为null, 表示返回
+            return true;
+        }
+        return isAbroad(dest.getParent().getId());
+    }
+
+    /**
+     * 根据id获取省份
+     * @param id
+     * @return
+     */
+    @Override
+    public Destination getProvince(Long id) {
+
+        if(this.isAbroad(id)){
+            return null;
+        }
+
+        Destination dest = destinationMapper.selectByPrimaryKey(id);
+
+        if(dest.getDeep() == 1){  //国家
+            return null;
+        }
+
+        if(dest.getDeep() == 2){  //省份
+            return dest;
+        }
+
+        if(dest.getDeep() == 3){  //城市
+            return dest.getParent();
+        }
+        return null;
+    }
+
     private void createToasts(Long parentId, List<Destination> list){
         //1.根据前台传递过来的id值，获取地区
         Destination destination = destinationMapper.selectByPrimaryKey(parentId);

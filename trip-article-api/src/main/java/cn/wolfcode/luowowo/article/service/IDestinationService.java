@@ -25,4 +25,8 @@ public interface IDestinationService {
     List<Destination> getToasts(Long parentId);
 
     List<Destination> queryDestByRegionId(Long rid);
+
+    Destination getCountry(Long id);
+
+    Destination getProvince(Long id);
 }
