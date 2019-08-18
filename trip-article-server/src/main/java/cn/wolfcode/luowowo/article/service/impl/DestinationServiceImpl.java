@@ -77,6 +77,9 @@ public class DestinationServiceImpl implements IDestinationService {
         if(dest.getParent() == null){
             return dest;
         }
+//        if(dest.getId() == 1){
+//            return null;
+//        }
         List<Destination> toasts = this.getToasts(id);
         if(toasts != null && toasts.size() > 0 ){
             return toasts.get(0);

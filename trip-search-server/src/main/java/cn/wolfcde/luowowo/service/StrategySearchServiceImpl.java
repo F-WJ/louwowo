@@ -161,6 +161,9 @@ public class StrategySearchServiceImpl implements IStrategySearchService {
             if(key.get("id") == null || key.get("name") == null){
                 continue;
             }
+            if("中国".equals(key.get("name").toString())){
+                continue;
+            }
             StatisVO vo = new StatisVO();
             vo.setId(Long.parseLong(key.get("id").toString()));
             vo.setName(key.get("name").toString());
