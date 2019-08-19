@@ -135,6 +135,11 @@ public class DestinationServiceImpl implements IDestinationService {
         return null;
     }
 
+    @Override
+    public List<Destination> list() {
+        return destinationMapper.selectAll();
+    }
+
     private void createToasts(Long parentId, List<Destination> list){
         //1.根据前台传递过来的id值，获取地区
         Destination destination = destinationMapper.selectByPrimaryKey(parentId);

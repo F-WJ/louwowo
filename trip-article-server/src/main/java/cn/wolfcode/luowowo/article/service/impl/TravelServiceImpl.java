@@ -35,7 +35,7 @@ public class TravelServiceImpl implements ITravelService {
 
     @Override
     public PageInfo query(TravelQuery qo) {
-        PageHelper.startPage(qo.getCurrentPage(), qo.getPageSize());
+        PageHelper.startPage(qo.getCurrentPage(), qo.getPageSize(), qo.getOrderBy());
         return new PageInfo(travelMapper.selectForList(qo));
     }
 

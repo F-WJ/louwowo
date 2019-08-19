@@ -42,12 +42,17 @@ public class travelController {
     private ITravelService travelService;
 
 
+
+
     @RequestMapping("/list")
     public String list(Model model, @ModelAttribute("qo") TravelQuery qo){
 
         //pageInfo
         PageInfo pageInfo = travelService.query(qo);
         model.addAttribute("pageInfo", pageInfo);
+
+        //轮播图tcs
+
 
         return "travel/list";
     }

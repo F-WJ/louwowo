@@ -5,6 +5,7 @@ package cn.wolfcode.luowowo.member.service;
 import cn.wolfcode.luowowo.common.exception.LoginException;
 import cn.wolfcode.luowowo.member.domain.UserInfo;
 
+import java.util.List;
 
 
 public interface IUserInfoService {
@@ -34,4 +35,8 @@ public interface IUserInfoService {
     void saveUserInfo(String phone, String nickname, String password, String rpassword, String verifyCode) throws LoginException;
 
     String userLogin(String username, String password) throws LoginException;
+
+
+    List<UserInfo> list();
+
 }

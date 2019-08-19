@@ -28,6 +28,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.jws.WebParam;
 import javax.servlet.http.HttpServletRequest;
 
 import java.util.Date;
@@ -52,6 +53,10 @@ public class TravelController {
 
     @Reference
     private ITravelDetailRedisService travelDetailRedisService;
+
+
+
+
 
 
 

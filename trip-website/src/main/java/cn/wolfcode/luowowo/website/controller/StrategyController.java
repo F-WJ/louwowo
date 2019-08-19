@@ -193,11 +193,21 @@ public class StrategyController {
         model.addAttribute("themes", themes);
 
 
-
-
-
         return "/strategy/index";
     }
+
+
+    //根据攻略类型来显示攻略信息
+    @RequestMapping("searchPage")
+    public String searchPage(Model model, @ModelAttribute("qo")SearchQueryObject qo){
+
+        Page  page = strategySearchService.query(qo);
+        model.addAttribute("page", page);
+
+        return "strategy/searchPageTpl";
+    }
+
+
 
     @RequestMapping("list")
     public String list(Model model, Long destId, @ModelAttribute("qo")StrategyQuery qo){

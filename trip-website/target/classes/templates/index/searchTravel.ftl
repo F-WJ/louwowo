@@ -71,7 +71,7 @@
                                         <p class="seg-desc">${t.summary!}</p>
                                         <ul class="seg-info-list clearfix">
                                             <li>
-                                                <a href="javascript:;" target="_blank" class="_j_search_link">${t.destName}</a>
+                                                <a href="javascript:;" target="_blank" class="_j_search_link">${t.destName!}</a>
                                             </li>
                                             <li>
                                                 浏览(${t.viewNum!0})

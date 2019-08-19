@@ -51,7 +51,7 @@
     <div class="mfw-focus" id="_j_mfw_focus">
         <div class="show-slider" style="height: 450px;">
             <ul class="show-image">
-                <#if tcs>
+                <#if tcs??>
                 <#list  tcs as tc>
                     <li class="${(tc_index==0)?string('first','')}">
                         <a href="/travel/detail?id=${tc.travelId!}" class="show-pic">
@@ -68,6 +68,7 @@
                 </#if>
             </ul>
             <ul class="show-nav">
+                <#if tcs??>
                  <#list  tcs as tc>
                     <li class="${(tc_index==0)?string('active','')}" data-id="0">
                         <a href="javascript:">
@@ -76,6 +77,7 @@
                         </a>
                     </li>
                  </#list>
+                </#if>
             </ul>
             <a class="show-more" target="_blank" href="javascript:;">历历在目</a>
         </div>
@@ -199,7 +201,7 @@
                 </div>
                 <div class="asidebox-bd">
 
-                    <#list scs as sc>
+
                         <div class="gonglve-item">
                             <div class="img">
                                 <a href="javascript:;" target="_blank">
@@ -207,7 +209,6 @@
                             </div>
                             <h3><a href="javascript:;" target="_blank">${sc.subTitle!}</a></h3>
                         </div>
-                    </#list>
                 </div>
 
             </div>

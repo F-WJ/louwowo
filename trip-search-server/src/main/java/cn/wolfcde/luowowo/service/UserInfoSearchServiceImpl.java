@@ -8,6 +8,8 @@ import org.elasticsearch.client.ElasticsearchClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 
+import java.util.List;
+
 
 @Service
 public class UserInfoSearchServiceImpl implements IUserInfoSearchService {
@@ -28,5 +30,10 @@ public class UserInfoSearchServiceImpl implements IUserInfoSearchService {
     @Override
     public void saveOrUpdate(UserInfoTemplate template) {
         userInfoTemplateRepository.save(template);
+    }
+
+    @Override
+    public List<UserInfoTemplate> findByDestName(String name) {
+        return userInfoTemplateRepository.findByDestName(name);
     }
 }

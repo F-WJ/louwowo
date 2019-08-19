@@ -8,6 +8,7 @@ import cn.wolfcode.luowowo.search.template.StrategyTemplate;
 import cn.wolfcode.luowowo.search.vo.StatisVO;
 import com.alibaba.dubbo.config.annotation.Service;
 import org.elasticsearch.client.ElasticsearchClient;
+import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.bucket.composite.*;
@@ -124,6 +125,30 @@ public class StrategySearchServiceImpl implements IStrategySearchService {
         }
 
         return this.staticGroup(idField, nameField, "conditionGroup");
+    }
+
+    /**
+     * 根据type查询攻略信息
+     * @param qo
+     * @return
+     */
+    @Override
+    public Page query(SearchQueryObject qo) {
+        BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
+        if( qo.getType() == SearchQueryObject.CONDITION_TYPE_ABROAD){
+            boolQuery.must(QueryBuilders.termQuery("countryId", qo.getTypeValue()));
+        }else if(qo.getType() == SearchQueryObject.CONDITION_TYPE_UN_ABROAD){
+            boolQuery.must(QueryBuilders.termQuery("provinceId", qo.getTypeValue()));
+        }else if(qo.getType() == SearchQueryObject.CONDITION_TYPE_THEME){
+            boolQuery.must(QueryBuilders.termQuery("themeId", qo.getTypeValue()));
+        }
+
+        return repository.search(boolQuery, qo.getPageable());
+    }
+
+    @Override
+    public List<StrategyTemplate> findByDestName(String name) {
+        return repository.findByDestName(name);
     }
 
     private List<StatisVO> staticGroup(String idField, String nameField, String conditionGroup) {

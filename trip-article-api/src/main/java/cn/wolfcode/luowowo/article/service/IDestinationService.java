@@ -29,4 +29,7 @@ public interface IDestinationService {
     Destination getCountry(Long id);
 
     Destination getProvince(Long id);
+
+    List<Destination> list();
+
 }
