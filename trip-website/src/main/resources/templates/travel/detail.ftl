@@ -15,6 +15,20 @@
     <script type="text/javascript" src="/js/plugins/d-toast/js/d-toast.min.js"></script>
 
 
+    <!-- 引入依赖 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+    <!-- 只要一个div的class是social-share即可，内容会自动初始化 -->
+
+
+
+    <!-- 引入依赖 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+    <!-- 只要一个div的class是social-share即可，内容会自动初始化 -->
+
+
+
     <style>
         .vc_articleT  img{
             width: 100%;
@@ -232,13 +246,32 @@
                             </a>
                         </div>
                         <div class="bs_share">
-                            <a href="javascript:void(0);" rel="nofollow" title="分享" class="bs_btn"><i></i><span>${detail.sharenum!}</span><strong>分享</strong></a>
-                            <div class="bs_pop clearfix" style="display: none;">
-                                <a title="分享到新浪微博" rel="nofollow" role="button" class="sina"></a>
-                                <a title="分享到QQ空间" rel="nofollow" role="button" class="zone"></a>
-                                <a title="分享到微信" rel="nofollow" role="button" class="weixin"></a>
-                            </div>
+                            <a href="javascript:;" title="分享" class="btn-share bs_btn"><i
+                                        class="i03"></i><em>${(vo.sharenum)!0}</em></a>
                         </div>
+                        <div class="bs_share">
+                            <a href="javascript:void(0);" rel="nofollow" title="分享" class="bs_btn"><i></i><span>${detail.sharenum!}</span><strong>分享</strong></a>
+                            <div class="social-share"></div>
+                        </div>
+
+                        <div class="bs_pop clearfix" style="display: none;">
+                            <a title="分享到新浪微博" rel="nofollow" role="button" class="sina" data-japp="sns_share"
+                               data-jappfedata="" data-key="wb" data-title="盘点 | 广州周边好玩的地方有哪些？"
+                               data-content="盘点 | 广州周边好玩的地方有哪些？"
+                               data-pic="http://b4-q.mafengwo.net/s13/M00/7F/2D/wKgEaVyLhXKABFf5AAI6AbEkm0o40.jpeg?imageView2%2F2%2Fw%2F640%2Fh%2F360%2Fq%2F90"
+                               data-url="http://www.mafengwo.cn/gonglve/ziyouxing/1775.html"></a>
+                            <a title="分享到QQ空间" rel="nofollow" role="button" class="zone" data-japp="sns_share"
+                               data-jappfedata="" data-key="qz" data-title="盘点 | 广州周边好玩的地方有哪些？"
+                               data-content="盘点 | 广州周边好玩的地方有哪些？"
+                               data-pic="http://b4-q.mafengwo.net/s13/M00/7F/2D/wKgEaVyLhXKABFf5AAI6AbEkm0o40.jpeg?imageView2%2F2%2Fw%2F640%2Fh%2F360%2Fq%2F90"
+                               data-url="http://www.mafengwo.cn/gonglve/ziyouxing/1775.html"></a>
+                            <a title="分享到微信" rel="nofollow" role="button" class="weixin" data-japp="weixin_dialog_share"
+                               data-jappfedata=""
+                               data-wx_qr="http://www.mafengwo.cn/qrcode.php?text=https%3A%2F%2Fm.mafengwo.cn%2Fgonglve%2Fziyouxing%2F1775.html&amp;size=150&amp;eclevel=H&amp;logo=&amp;__stk__=d3c9fd1d23b028a45ec5b71a30324cb9_391fafc14c22754068d1543e8cfc5d04"
+                               data-detail="1775"></a>
+                        </div>
+
+
 <#--                        判断游记作者是否是当前用户-->
                         <#if userInfo??>
                         <div class="bs_collect ">

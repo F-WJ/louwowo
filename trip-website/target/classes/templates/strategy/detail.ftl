@@ -8,8 +8,15 @@
     <link href="/styles/strategyDetail.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="/js/plugins/zebrazooltips/public/css/zebra_tooltips.css" type="text/css">
+    <link rel="stylesheet" href="/js/plugins/sns_share/css/style.css" type="text/css">
+
+
 
     <script type="text/javascript" src="/js/jquery/jquery.js"></script>
+
+    <#--    分享-->
+    <script type="text/javascript" src="/js/plugins/sns_share/js/xuanfeng_sns_share.js"></script>
+
     <script type="text/javascript" src="/js/plugins/jquery-form/jquery.form.js"></script>
     <link href="/js/plugins/jqPaginator/jqPagination.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/plugins/jqPaginator/jq-paginator.min.js"></script>
@@ -18,7 +25,71 @@
 
     <script type="text/javascript" src="/js/plugins/zebrazooltips/public/javascript/zebra_tooltips.js"></script>
 
+
+    <!-- 引入依赖 -->
+<#--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">-->
+<#--    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>-->
+
+
+
+
+
+
     <script>
+
+        // 分享
+        $(function(){
+            var shareTitle = $(".post_title h1").text()+"ONEDULL";
+            var sinaTitle = '分享文章 「' + shareTitle + '」 （分享自FWJ）',
+                renrenTitle = '分享文章 「' + shareTitle + '」（分享自FWJ)）',
+                tqqTitle = '分享文章 「' + shareTitle + '」（分享自FWJ）',
+                tqzoneTitle = '分享文章 「' + shareTitle + '」-ONEDULL（分享自FWJ）';
+            var picShare = encodeURIComponent($(".post_title").data("thumb"));
+
+            $('body').xuanfengSnsShare({
+                tsina:{
+                    url : encodeURIComponent(window.location.href),
+                    title: sinaTitle,
+                    pic: picShare
+                },
+                renren:{
+                    url : encodeURIComponent(window.location.href),
+                    title: renrenTitle,
+                    pic: picShare
+                },
+                tqq:{
+                    url : encodeURIComponent(window.location.href),
+                    title: tqqTitle,
+                    pic: picShare
+                },
+                tqzone:{
+                    url : encodeURIComponent(window.location.href),
+                    title: tqzoneTitle,
+                    pic: picShare
+                }
+            });
+
+            // 微信分享
+            $(".share_weixin").click(function(){
+                $("#ewmimg").remove();
+                var thisURL = window.location.href,
+                    strwrite = "<img id='ewmimg' class='ewmimg' src='https://chart.googleapis.com/chart?cht=qr&chs=150x150&choe=UTF-8&chld=L|4&chl=" + thisURL + "' width='85' height='85' alt='轩枫阁文章 二维码分享' />";
+                $("#ewm").prepend(strwrite);
+                $("#wemcn").show();
+            });
+            $("#ewmkg").click(function(){
+                $("#wemcn").hide();
+            });
+
+        });
+
+
+
+
+
+
+
+
        $(function () {
            //评论
            $("#searchForm").ajaxForm(function (data) {
@@ -118,7 +189,34 @@
                });
            })
 
-           //分享
+
+
+       })
+
+
+       // 分享
+
+
+
+
+
+
+
+
+
+
+
+
+
+       //分享
+       $(document).ready(function(){
+           $(".btn-share").mousedown(function(){
+               $(".pop").slideToggle();
+           });
+       });
+
+       $(function () {
+           console.log(window.location.href);
        })
 
     </script>
@@ -139,6 +237,33 @@
                     <span class="time" style="margin-left: 20px;"><em>阅读 ${(vo.viewnum)!0}</em></span>
                     <span class="time">旅游攻略<em>${(detail.createTime?string("yyyy-MM-dd"))!}</em></span>
                 </div>
+
+
+
+
+
+
+                <div id="sns_share" class="cf">
+                    <span class="sns_share_to fl">分享到：</span>
+                    <a class="share_weixin share_icon fl" href="javascript:;" title="查看本文二维码，分享至微信"><em>二维码</em></a>
+                    <a class="share_tsina share_icon fl" href="javascript:;" title="分享到新浪微博"><em>新浪微博</em></a>
+                    <a class="share_tqq share_icon fl" href="javascript:;" title="分享到腾讯微博"><em>腾讯微博</em></a>
+                    <a class="share_renren share_icon fl" href="javascript:;" title="分享到人人网"><em>人人网</em></a>
+                    <a class="share_tqzone share_icon fl" href="javascript:;" title="分享到QQ空间"><em>QQ空间</em></a>
+
+                    <div class="wemcn" id="wemcn">
+                        <div id="ewm" class="ewmDiv clearfix">
+                            <div class="rwmtext">
+                                <p>扫一扫，用手机观看！</p>
+                                <p>用微信扫描还可以</p>
+                                <p>分享至好友和朋友圈</p>
+                            </div>
+                        </div>
+                        <a class="share_icon" href="javascript:void(0)" id="ewmkg"></a>
+                        <i class="ewmsj share_icon"></i>
+                    </div>
+                </div>
+
 
                 <div class="user_list">
                     <div class="clearfix">
@@ -228,25 +353,21 @@
                         <a href="javascript:;" class="_j_support_btn" title="顶" data-sid="${detail.id!}"><i class="i05 "></i><em
                                 class="support_num">${(vo.thumbsupnum)!0}</em></a>
                     </div>
-                    <div class="bs_pop clearfix" style="display: none;">
-                        <a title="分享到新浪微博" rel="nofollow" role="button" class="sina" data-japp="sns_share"
-                           data-jappfedata="" data-key="wb" data-title="盘点 | 广州周边好玩的地方有哪些？"
-                           data-content="盘点 | 广州周边好玩的地方有哪些？"
-                           data-pic="http://b4-q.mafengwo.net/s13/M00/7F/2D/wKgEaVyLhXKABFf5AAI6AbEkm0o40.jpeg?imageView2%2F2%2Fw%2F640%2Fh%2F360%2Fq%2F90"
-                           data-url="http://www.mafengwo.cn/gonglve/ziyouxing/1775.html"></a>
-                        <a title="分享到QQ空间" rel="nofollow" role="button" class="zone" data-japp="sns_share"
-                           data-jappfedata="" data-key="qz" data-title="盘点 | 广州周边好玩的地方有哪些？"
-                           data-content="盘点 | 广州周边好玩的地方有哪些？"
-                           data-pic="http://b4-q.mafengwo.net/s13/M00/7F/2D/wKgEaVyLhXKABFf5AAI6AbEkm0o40.jpeg?imageView2%2F2%2Fw%2F640%2Fh%2F360%2Fq%2F90"
-                           data-url="http://www.mafengwo.cn/gonglve/ziyouxing/1775.html"></a>
-                        <a title="分享到微信" rel="nofollow" role="button" class="weixin" data-japp="weixin_dialog_share"
-                           data-jappfedata=""
-                           data-wx_qr="http://www.mafengwo.cn/qrcode.php?text=https%3A%2F%2Fm.mafengwo.cn%2Fgonglve%2Fziyouxing%2F1775.html&amp;size=150&amp;eclevel=H&amp;logo=&amp;__stk__=d3c9fd1d23b028a45ec5b71a30324cb9_391fafc14c22754068d1543e8cfc5d04"
-                           data-detail="1775"></a>
-                    </div>
+
                 </div>
                 <!-- <p class="title" id="_j_catalogtitle">攻略目录</p> -->
             </div>
+
+
+
+            <div class="side-sales">
+
+
+
+            </div>
+
+
+
             <div class="side-sales">
                 <h3>本周热卖</h3>
                 <ul>
